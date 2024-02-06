@@ -1,0 +1,201 @@
+/* this style is use to style other pages only index.html  and contrabute.html is not included  */
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.stylish-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px; /* Larger font size */
+    color: #300606;
+    text-align: center;
+    background-color: #a8e6cf;
+
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.box1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box1 h4 {
+    margin-bottom: 15px;
+    color: #8e44ad;
+    font-size: 20px;
+}
+
+.box1 ul {
+    list-style-type: none;
+}
+
+.box1 li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.box1 li:last-child {
+    border-bottom: none;
+}
+
+.box1 a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.box1 a:hover {
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #pap1 {
+        display: block;
+    }
+    .box1 {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #pap1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .box1 {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+.head{
+    text-align: center;
+    
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 10px;
+    
+}
+.pages{
+    text-decoration: none;
+    margin-top: 20px;
+    display: flex;
+    
+}
+#pap{
+    
+   display: flex;
+    margin-left: 2px;
+    padding-left: 2px;
+    
+   
+
+}
+.page{
+    text-align: left;
+}
+
+.top {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: .2em;
+    padding:5px;
+    overflow-x: scroll;
+    
+}
+
+
+.data_mat{
+    background-color: aqua;
+}
+
+.resource-container{
+    display: flex;
+    justify-content: space-between;
+   
+
+    
+
+}
+
+.box{
+    /* background-color: rgb(65, 129, 129); */
+    flex-grow: 1;
+    margin: 10;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.box1{
+    margin-left: 6px;
+}
+.box2{
+    margin-right: 6px;
+}
+.box_bottom{
+text-align: center;
+}
+
+
+#headtext{
+    text-align: center;
+    background-color: rgb(77, 146, 100);
+    margin-right: 6px;
+    margin-left: 6px;
+    padding: 10px;
+    font-weight: bold;
+}
+ul{
+   list-style-type: none;
+   text-align: center;
+    padding-left: 0px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+.styled-heading {
+    color: #2E86C1; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: center; 
+    background-color: #D6EAF8; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px; 
+}
+h4 {
+ justify-content: center;
+ font-weight: bold;
+ 
+}
+
+.sty_size{
+    font-size: 30px;
+}
