@@ -19,7 +19,7 @@ let submit = document.querySelector("#submit1");
          let loadmsg= document.querySelector("#sendmessage2");
 
 function formmsg(){
-  loading.innerHTML="DETIALS ARE SEND SUCCESSFULLY AND YOU WILL GET RESPONCE SOON..";
+  loading.innerHTML= ' <div class="alert alert-success" role="alert"> DETIALS ARE SEND SUCCESSFULLY AND YOU WILL GET RESPONCE SOON..</div>';
 }
 
 
