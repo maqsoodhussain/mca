@@ -10,7 +10,6 @@ Objective: To create a centralized platform where MCA students can access study 
 Target Users: MCA students, educators, and contributors interested in Computer Applications.
 
 Features and Functionality
-
 Categorized materials for different subjects and semesters for easy navigation.
 Include PDFs, PPTs, DOCs, and links to external resources.
 Search functionality to easily find specific materials.
