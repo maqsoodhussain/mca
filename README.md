@@ -4,7 +4,6 @@
 <p>This project is created using html, css,js and google app script
 where students of mca can download papers and notes realated to mca degree
 and can collabe with other student to develope projects together
-
 </p>
 
 Objective: To create a centralized platform where MCA students can access study materials, share resources, and contribute to the collective learning environment.
