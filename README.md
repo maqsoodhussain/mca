@@ -27,7 +27,6 @@ Notify users about new materials, updates, or announcements.
 Optional integration with email for important notifications.
 Technical Stack
 Frontend:
-
 HTML & CSS: For structuring and styling the website.
 JavaScript: To make the website interactive, manage API requests for uploading/downloading files, and handle user sessions.
 Backend (Using Google App Script):
