@@ -5,7 +5,6 @@
 where students of mca can download papers and notes realated to mca degree
 and can collabe with other student to develope projects together
 </p>
-
 Objective: To create a centralized platform where MCA students can access study materials, share resources, and contribute to the collective learning environment.
 
 Target Users: MCA students, educators, and contributors interested in Computer Applications.
