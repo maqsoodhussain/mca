@@ -1,19 +1,15 @@
-# WEB SITE FOR MCA STUDENTS
+# WEB SITE FOR MCA STUDENTS   <https://maqsoodhussain.github.io/mca>
 #### Video Demo:  <https://youtu.be/XfO5mIF_qBo>
 #### Description:
 <p>This project is created using html, css,js and google app script
 where students of mca can download papers and notes realated to mca degree
 and can collabe with other student to develope projects together
-
 </p>
-
 Objective: To create a centralized platform where MCA students can access study materials, share resources, and contribute to the collective learning environment.
 
 Target Users: MCA students, educators, and contributors interested in Computer Applications.
 
 Features and Functionality
-
-
 Categorized materials for different subjects and semesters for easy navigation.
 Include PDFs, PPTs, DOCs, and links to external resources.
 Search functionality to easily find specific materials.
@@ -31,7 +27,6 @@ Notify users about new materials, updates, or announcements.
 Optional integration with email for important notifications.
 Technical Stack
 Frontend:
-
 HTML & CSS: For structuring and styling the website.
 JavaScript: To make the website interactive, manage API requests for uploading/downloading files, and handle user sessions.
 Backend (Using Google App Script):
