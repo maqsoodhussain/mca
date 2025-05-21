@@ -36,7 +36,53 @@
 </head>
 
 <body>
+<style>
+#palestine-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  animation: fadeOut 1s ease-in-out 5s forwards;
+  font-family: sans-serif;
+  text-align: center;
+}
 
+#palestine-fullscreen img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+#palestine-fullscreen .text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+</style>
+
+<div id="palestine-fullscreen">
+  <img src="https://www.thegreattech.tech/palestine.gif" alt="Palestine Flag">
+  <div class="text">Free Palestine</div>
+</div>
+<script>
+  setTimeout(() => {
+    const loader = document.getElementById('palestine-loader');
+    if (loader) loader.remove();
+  }, 5000); // 5s display + 1s fade out
+</script>
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
