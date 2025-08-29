@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Semester - Master of Computer Applications</title>
+      <meta name="description" content="Comprehensive resources for MCA students including syllabus, subject materials, previous year papers, and study notes">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #3a0ca3;
+            --accent: #7209b7;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --info: #4895ef;
+            --surface: #ffffff;
+            --on-surface: #212529;
+            --surface-dark: #121212;
+            --on-surface-dark: #e0e0e0;
+            --card-bg: #ffffff;
+            --card-bg-dark: #1e1e1e;
+            --sidebar-bg: #f8f9fa;
+            --sidebar-bg-dark: #1a1a1a;
+            --footer-bg: linear-gradient(135deg, #1f1f2e, #2c3e50);
+            --footer-bg-dark: linear-gradient(135deg, #0f0f1a, #1a2530);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+            --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            --shadow-dark: 0 8px 20px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--on-surface);
+            background-color: var(--surface);
+            transition: var(--transition);
+            line-height: 1.6;
+        }
+        
+        body.dark-mode {
+            background-color: var(--surface-dark);
+            color: var(--on-surface-dark);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 0.8rem 1rem;
+            transition: var(--transition);
+        }
+        
+        body.dark-mode .navbar {
+            background-color: #1a1a1a !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            margin: 0 0.5rem;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            position: sticky;
+            top: 90px;
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+            background-color: var(--sidebar-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        body.dark-mode .sidebar {
+            background-color: var(--sidebar-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+        
+        .sidebar-header {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        
+        body.dark-mode .sidebar-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .subject-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .subject-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .subject-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            color: var(--on-surface);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        .subject-link:hover, .subject-link.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        body.dark-mode .subject-link {
+            color: var(--on-surface-dark);
+        }
+        
+        .show-all-btn {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .show-all-btn:hover {
+            background: linear-gradient(90deg, var(--secondary), var(--primary-dark));
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding-left: 2rem;
+        }
+        
+        /* Syllabus Section */
+        .syllabus-card {
+            border: none;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+            background-color: var(--card-bg);
+        }
+        
+        body.dark-mode .syllabus-card {
+            background-color: var(--card-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+        
+        .syllabus-header {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.2rem;
+        }
+        
+        /* Subject Cards */
+        .subject-card {
+            border: none;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            margin-bottom: 1.5rem;
+            background-color: var(--card-bg);
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        body.dark-mode .subject-card {
+            background-color: var(--card-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+        
+        .subject-header {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.2rem;
+        }
+        
+        .subject-type {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            margin-left: 0.8rem;
+        }
+        
+        .core { background: var(--success); }
+        .elective { background: var(--accent); }
+        .lab { background: var(--warning); }
+        
+        /* Accordion Styles */
+        .accordion-button {
+            font-weight: 500;
+            padding: 1rem 1.25rem;
+            background-color: transparent;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(67, 97, 238, 0.1);
+            color: var(--primary);
+        }
+        
+        body.dark-mode .accordion-button {
+            background-color: var(--card-bg-dark);
+            color: var(--on-surface-dark);
+        }
+        
+        body.dark-mode .accordion-button:not(.collapsed) {
+            background-color: rgba(67, 97, 238, 0.2);
+            color: var(--primary);
+        }
+        
+        body.dark-mode .accordion-item {
+            border-color: #333;
+            background-color: var(--card-bg-dark);
+        }
+        
+        /* Badges */
+        .badge {
+            font-weight: 500;
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 8px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(90deg, var(--secondary), var(--primary-dark));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 1000;
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Semester Navigation */
+        .semester-nav {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        body.dark-mode .semester-nav {
+            background-color: var(--card-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--footer-bg);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+            transition: var(--transition);
+        }
+        
+        body.dark-mode footer {
+            background: var(--footer-bg-dark);
+        }
+        
+        footer .footer-link {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        
+        footer .footer-link:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+        
+        .social-link {
+            transition: transform 0.3s, color 0.3s;
+        }
+        
+        .social-link:hover {
+            transform: scale(1.2);
+            color: var(--primary) !important;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        /* Loading spinner */
+        .loading-spinner {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .loading-spinner:after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid var(--primary);
+            border-color: var(--primary) transparent var(--primary) transparent;
+            animation: loading-spinner 1.2s linear infinite;
+        }
+        
+        @keyframes loading-spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .sidebar {
+                position: relative;
+                top: 0;
+                height: auto;
+                margin-bottom: 2rem;
+            }
+            
+            .main-content {
+                padding-left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+            
+            .search-container {
+                margin-top: 1rem;
+                width: 100%;
+            }
+            
+            .input-group {
+                width: 100% !important;
+            }
+        }
+        
+        /* Custom scrollbar for sidebar */
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+        
+        body.dark-mode .sidebar::-webkit-scrollbar-thumb {
+            background: #444;
+        }
+        
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+        
+        body.dark-mode .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+        
+        /* Breadcrumb styling */
+        .breadcrumb-item.active {
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Syllabus download button */
+        .syllabus-download-btn {
+            background: linear-gradient(90deg, var(--success), var(--info));
+            border: none;
+            border-radius: 8px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 500;
+            transition: var(--transition);
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .syllabus-download-btn:hover {
+            background: linear-gradient(90deg, var(--info), var(--success));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 201, 240, 0.3);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-laptop-code me-2"></i>North Campus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="semestersDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-book me-1"></i> Semesters
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="semester.html?sem=1">Semester 1</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=2">Semester 2</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=3">Semester 3</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=4">Project Semester</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-download me-1"></i> Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-undo me-1"></i>Old</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="input-group me-3 search-container" style="width: 300px;">
+                        <input type="text" class="form-control" placeholder="Search subjects..." id="searchInput">
+                        <button class="btn btn-primary" id="searchButton">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- need some work on dark mode 10% working pending on dark mode  -->
+                    <!-- <button class="btn btn-outline-light" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button> -->
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Sidebar with subject navigation -->
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <h5 class="fw-bold gradient-text" id="sidebarTitle">Subjects</h5>
+                        <p class="small text-muted" id="subjectCount">Loading...</p>
+                    </div>
+                    <ul class="subject-list" id="subjectList">
+                        <li class="subject-item">
+                            <div class="text-center py-3">
+                                <div class="loading-spinner"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="show-all-btn" id="showAllBtn">
+                        <i class="fas fa-book me-1"></i> Show All Subjects
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Main content area -->
+            <div class="col-lg-9 main-content">
+                <!-- Semester Header -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" id="semesterBreadcrumb">Loading...</li>
+                            </ol>
+                        </nav>
+                        <h1 id="semesterTitle" class="fw-bold gradient-text">Semester Loading...</h1>
+                        <p id="semesterDescription" class="lead">Loading semester information...</p>
+                    </div>
+                </div>
+
+                <!-- Syllabus Section -->
+                <div class="row mb-4" id="syllabusSection">
+                    <div class="col">
+                        <div class="syllabus-card card">
+                            <div class="syllabus-header">
+                                <h3 class="mb-1"><i class="fas fa-file-alt me-2"></i> Semester Syllabus</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Download the complete syllabus for this semester which includes detailed information about all subjects, evaluation patterns, and reference materials.</p>
+                                <a href="#" class="syllabus-download-btn" id="syllabusDownloadBtn">
+                                    <i class="fas fa-download me-2"></i> Download Syllabus (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="semester-nav">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 mb-2 mb-md-0">
+                                    <label for="subjectFilter" class="form-label fw-semibold">Filter by Subject:</label>
+                                    <select class="form-select" id="subjectFilter">
+                                        <option value="all">All Subjects</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5 mb-2 mb-md-0">
+                                    <label for="typeFilter" class="form-label fw-semibold">Filter by Type:</label>
+                                    <select class="form-select" id="typeFilter">
+                                        <option value="all">All Types</option>
+                                        <option value="core">Core</option>
+                                        <option value="elective">Elective</option>
+                                        <option value="lab">Lab</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 mb-2 mb-md-0 d-flex align-items-end">
+                                    <button class="btn btn-outline-secondary w-100" id="resetFilters">
+                                        <i class="fas fa-undo me-1"></i> Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loadingIndicator" class="text-center py-5">
+                    <div class="loading-spinner"></div>
+                    <p class="mt-3">Loading semester data...</p>
+                </div>
+
+                <!-- Subjects Container -->
+                <div id="subjectsContainer" class="row"></div>
+
+                <!-- No Results Message -->
+                <div id="noResults" class="text-center py-5 d-none">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <h3 class="fw-semibold">No subjects found</h3>
+                    <p class="text-muted">Try adjusting your filters or search query</p>
+                    <button class="btn btn-primary mt-2" id="resetSearch">
+                        <i class="fas fa-undo me-1"></i> Reset Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- Footer -->
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold mb-3">MCA NORTH CAMPUS </h4>
+                    <p class="small">Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and exam resources —
+                empowering students for the future of technology.</p>
+                    
+                    <!-- Social Media -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://wa.me/+917889528326" class="text-white fs-5 social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/thegreattech" class="text-white fs-5 social-link"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#" class="text-white fs-5 social-link"><i class="fab fa-"></i></a>
+                        <a href="#" class="text-white fs-5 social-link"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link"><i class="fas fa-home me-2"></i>Home</a></li>
+                        <li><a href="semester.html?sem=1" class="footer-link"><i class="fas fa-book me-2"></i>Semester 1</a></li>
+                        <li><a href="semester.html?sem=2" class="footer-link"><i class="fas fa-book me-2"></i>Semester 2</a></li>
+                        <li><a href="semester.html?sem=3" class="footer-link"><i class="fas fa-book me-2"></i>Semester 3</a></li>
+                        <li><a href="semester.html?sem=4" class="footer-link"><i class="fas fa-project-diagram me-2"></i>Project Semester</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link"><i class="fas fa-file-alt me-2"></i>Syllabus</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-book-open me-2"></i>Study Materials</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-file-pdf me-2"></i>Previous Papers</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-video me-2"></i>Video Lectures</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Stay Updated</h5>
+                    <p class="small">Subscribe to our newsletter to get the latest updates and study resources.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2 rounded-pill" placeholder="Enter email">
+                        <button class="btn btn-primary rounded-pill"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    
+                    <!-- Contact -->
+                    <ul class="list-unstyled mt-3 small">
+                        <li><i class="fas fa-envelope me-2"></i> thegreattechofficial@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 7889528326</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Deparment of Computer Science North Campus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-light">
+            
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 MCA North Campus . All rights reserved. Designed by <a href="thegreattech.github.io">TheGreatTech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Get semester parameter from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const semester = urlParams.get('sem') || '1';
+
+        // DOM Elements
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const backToTopBtn = document.querySelector('.back-to-top');
+        const semesterTitle = document.getElementById('semesterTitle');
+        const semesterDescription = document.getElementById('semesterDescription');
+        const semesterBreadcrumb = document.getElementById('semesterBreadcrumb');
+        const subjectsContainer = document.getElementById('subjectsContainer');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const noResults = document.getElementById('noResults');
+        const subjectFilter = document.getElementById('subjectFilter');
+        const typeFilter = document.getElementById('typeFilter');
+        const resetFiltersBtn = document.getElementById('resetFilters');
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const subjectList = document.getElementById('subjectList');
+        const sidebarTitle = document.getElementById('sidebarTitle');
+        const subjectCount = document.getElementById('subjectCount');
+        const resetSearchBtn = document.getElementById('resetSearch');
+        const showAllBtn = document.getElementById('showAllBtn');
+        const syllabusDownloadBtn = document.getElementById('syllabusDownloadBtn');
+
+        // Semester descriptions
+        const semesterDescriptions = {
+            '1': 'Foundation courses in programming, mathematics, and computer fundamentals.',
+            '2': 'Advanced programming, data structures, and database management.',
+            '3': 'Specialized courses in web technologies, networking, and software engineering.',
+            '4': 'Industry project, internships, and advanced specialization courses.'
+        };
+
+        // Semester names
+        const semesterNames = {
+            '1': 'Semester 1',
+            '2': 'Semester 2',
+            '3': 'Semester 3',
+            '4': 'Project Semester'
+        };
+
+        // Syllabus download links
+        const syllabusLinks = {
+            '1': 'syllabus/semester1.pdf',
+            '2': 'syllabus/semester2.pdf',
+            '3': 'syllabus/semester3.pdf',
+            '4': 'syllabus/semester4.pdf'
+        };
+
+        // Store subjects data
+        let allSubjects = [];
+        let currentFilter = 'all';
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSemesterData();
+            initEventListeners();
+            checkDarkModePreference();
+        });
+
+        // Load semester data from JSON
+        function loadSemesterData() {
+            // Set semester title and description
+            const semesterName = semesterNames[semester] || `Semester ${semester}`;
+            semesterTitle.textContent = semesterName;
+            semesterBreadcrumb.textContent = semesterName;
+            sidebarTitle.textContent = `${semesterName} Subjects`;
+            semesterDescription.textContent = semesterDescriptions[semester] || '';
+            
+            // Set syllabus download link
+            syllabusDownloadBtn.href = syllabusLinks[semester] || '#';
+
+            // Show loading indicator
+            loadingIndicator.classList.remove('d-none');
+            subjectsContainer.innerHTML = '';
+            noResults.classList.add('d-none');
+            
+            // For demo purposes, we'll use sample data
+            // In a real implementation, you would fetch from a JSON file
+            // const sampleData = getSampleData(semester);
+            // allSubjects = sampleData.subjects;
+            // displaySubjects(allSubjects);
+            // populateSidebar(allSubjects);
+            // populateFilters(allSubjects);
+            // loadingIndicator.classList.add('d-none');
+            
+            // In a real implementation, you would fetch from a JSON file:
+            
+            fetch(`data/semester${semester}.json`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    allSubjects = data.subjects;
+                    displaySubjects(allSubjects);
+                    populateSidebar(allSubjects);
+                    populateFilters(allSubjects);
+                })
+                .catch(error => {
+                    console.error('Error fetching semester data:', error);
+                    subjectsContainer.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-danger" role="alert">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Failed to load semester data. Please try again later.
+                            </div>
+                        </div>
+                    `;
+                    subjectList.innerHTML = `
+                        <li class="subject-item">
+                            <div class="alert alert-warning m-2" role="alert">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                Unable to load subjects
+                            </div>
+                        </li>
+                    `;
+                })
+                .finally(() => {
+                    loadingIndicator.classList.add('d-none');
+                });
+            
+        }
+
+        // Populate sidebar with subjects
+        function populateSidebar(subjects) {
+            if (!subjects || subjects.length === 0) {
+                subjectList.innerHTML = `
+                    <li class="subject-item">
+                        <div class="alert alert-warning m-2" role="alert">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            No subjects available
+                        </div>
+                    </li>
+                `;
+                subjectCount.textContent = "0 subjects";
+                return;
+            }
+            
+            // Update subject count
+            subjectCount.textContent = `${subjects.length} subject${subjects.length !== 1 ? 's' : ''}`;
+            
+            // Clear and populate sidebar
+            subjectList.innerHTML = '';
+            subjects.forEach((subject, index) => {
+                const li = document.createElement('li');
+                li.className = 'subject-item';
+                li.innerHTML = `
+                    <a class="subject-link ${index === 0 && currentFilter === 'all' ? 'active' : ''}" data-subject="${subject.code}">
+                        <i class="fas fa-book me-2"></i> ${subject.name}
+                    </a>
+                `;
+                subjectList.appendChild(li);
+            });
+            
+            // Add click event listeners to sidebar links
+            const subjectLinks = document.querySelectorAll('.subject-link');
+            subjectLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    subjectLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show only this subject
+                    const subjectCode = this.getAttribute('data-subject');
+                    currentFilter = subjectCode;
+                    const filteredSubjects = allSubjects.filter(subject => subject.code === subjectCode);
+                    displaySubjects(filteredSubjects);
+                    
+                    // Scroll to top of subjects
+                    subjectsContainer.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        }
+
+        // Display subjects in the container
+        function displaySubjects(subjects) {
+            if (!subjects || subjects.length === 0) {
+                noResults.classList.remove('d-none');
+                subjectsContainer.classList.add('d-none');
+                return;
+            }
+            
+            noResults.classList.add('d-none');
+            subjectsContainer.classList.remove('d-none');
+            
+            // Clear container
+            subjectsContainer.innerHTML = '';
+            
+            // Get filter values
+            const selectedSubject = subjectFilter.value;
+            const selectedType = typeFilter.value;
+            
+            // Filter subjects based on selections (if not already filtered by sidebar)
+            let filteredSubjects = subjects;
+            if (currentFilter === 'all') {
+                filteredSubjects = subjects.filter(subject => {
+                    const subjectMatch = selectedSubject === 'all' || subject.name === selectedSubject;
+                    const typeMatch = selectedType === 'all' || subject.type === selectedType;
+                    return subjectMatch && typeMatch;
+                });
+            }
+            
+            if (filteredSubjects.length === 0) {
+                noResults.classList.remove('d-none');
+                return;
+            }
+            
+            // Create subject cards
+            filteredSubjects.forEach(subject => {
+                const subjectCard = createSubjectCard(subject);
+                subjectsContainer.appendChild(subjectCard);
+            });
+        }
+
+        // Create subject card HTML
+        function createSubjectCard(subject) {
+            const col = document.createElement('div');
+            col.className = 'col-12 mb-4';
+            col.id = `subject-${subject.code}`;
+            
+            // Get available years for this subject
+            const years = subject.papers ? Object.keys(subject.papers) : [];
+            
+            col.innerHTML = `
+                <div class="subject-card card fade-in h-100">
+                    <div class="subject-header">
+                        <h3 class="mb-1">${subject.name} <span class="subject-type ${subject.type}">${subject.type.toUpperCase()}</span></h3>
+                        <p class="mb-0">${subject.code} • ${subject.credits} Credits</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">${subject.description}</p>
+                        
+                        <div class="accordion mt-4" id="subjectAccordion-${subject.code}">
+                            ${years.length > 0 ? `
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#papersCollapse-${subject.code}">
+                                        <i class="fas fa-file-pdf me-2 text-danger"></i> Previous Year Papers
+                                    </button>
+                                </h2>
+                                <div id="papersCollapse-${subject.code}" class="accordion-collapse collapse show" data-bs-parent="#subjectAccordion-${subject.code}">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            ${years.map(year => `
+                                                <a href="${subject.papers[year]}" class="btn btn-outline-primary btn-sm" target="_blank">${year} <i class="fas fa-external-link-alt ms-1"></i></a>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${subject.books && subject.books.length > 0 ? `
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#booksCollapse-${subject.code}">
+                                        <i class="fas fa-book me-2 text-success"></i> Recommended Books
+                                    </button>
+                                </h2>
+                                <div id="booksCollapse-${subject.code}" class="accordion-collapse collapse" data-bs-parent="#subjectAccordion-${subject.code}">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            ${subject.books.map(book => `
+                                                <a href="${book.link}" class="list-group-item list-group-item-action" target="_blank">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6 class="mb-1">${book.title}</h6>
+                                                        <small><i class="fas fa-external-link-alt"></i></small>
+                                                    </div>
+                                                    <small class="text-muted">By ${book.author}</small>
+                                                </a>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${subject.notes && subject.notes.length > 0 ? `
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notesCollapse-${subject.code}">
+                                        <i class="fas fa-sticky-note me-2 text-warning"></i> Study Material & Notes
+                                    </button>
+                                </h2>
+                                <div id="notesCollapse-${subject.code}" class="accordion-collapse collapse" data-bs-parent="#subjectAccordion-${subject.code}">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            ${subject.notes.map(note => `
+                                                <a href="${note.link}" class="list-group-item list-group-item-action" target="_blank">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6 class="mb-1">${note.title}</h6>
+                                                        <small><i class="fas fa-download"></i></small>
+                                                    </div>
+                                                </a>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return col;
+        }
+
+        // Populate filter dropdowns
+        function populateFilters(subjects) {
+            // Populate subject filter
+            subjectFilter.innerHTML = '<option value="all">All Subjects</option>';
+            subjects.forEach(subject => {
+                const option = document.createElement('option');
+                option.value = subject.name;
+                option.textContent = subject.name;
+                subjectFilter.appendChild(option);
+            });
+        }
+
+        // Initialize event listeners
+        function initEventListeners() {
+            // Dark mode toggle
+            darkModeToggle.addEventListener('click', toggleDarkMode);
+            
+            // Back to top button
+            window.addEventListener('scroll', toggleBackToTop);
+            backToTopBtn.addEventListener('click', scrollToTop);
+            
+            // Filter events
+            subjectFilter.addEventListener('change', applyFilters);
+            typeFilter.addEventListener('change', applyFilters);
+            resetFiltersBtn.addEventListener('click', resetFilters);
+            
+            // Search functionality
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            // Reset search button
+            if (resetSearchBtn) {
+                resetSearchBtn.addEventListener('click', resetFilters);
+            }
+            
+            // Show all button
+            if (showAllBtn) {
+                showAllBtn.addEventListener('click', showAllSubjects);
+            }
+        }
+
+        // Show all subjects
+        function showAllSubjects() {
+            currentFilter = 'all';
+            displaySubjects(allSubjects);
+            
+            // Remove active class from all sidebar links
+            const subjectLinks = document.querySelectorAll('.subject-link');
+            subjectLinks.forEach(link => link.classList.remove('active'));
+            
+            // Reset filters
+            subjectFilter.value = 'all';
+            typeFilter.value = 'all';
+            searchInput.value = '';
+        }
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+
+        // Check dark mode preference
+        function checkDarkModePreference() {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        }
+
+        // Toggle back to top button
+        function toggleBackToTop() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Apply filters
+        function applyFilters() {
+            currentFilter = 'all';
+            displaySubjects(allSubjects);
+            
+            // Remove active class from all sidebar links
+            const subjectLinks = document.querySelectorAll('.subject-link');
+            subjectLinks.forEach(link => link.classList.remove('active'));
+        }
+
+        // Reset filters
+        function resetFilters() {
+            currentFilter = 'all';
+            subjectFilter.value = 'all';
+            typeFilter.value = 'all';
+            searchInput.value = '';
+            displaySubjects(allSubjects);
+            
+            // Remove active class from all sidebar links
+            const subjectLinks = document.querySelectorAll('.subject-link');
+            subjectLinks.forEach(link => link.classList.remove('active'));
+        }
+
+        // Perform search
+        function performSearch() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            
+            if (searchTerm === '') {
+                resetFilters();
+                return;
+            }
+            
+            currentFilter = 'all';
+            const filteredSubjects = allSubjects.filter(subject => 
+                subject.name.toLowerCase().includes(searchTerm) || 
+                subject.code.toLowerCase().includes(searchTerm) ||
+                subject.description.toLowerCase().includes(searchTerm)
+            );
+            
+            displaySubjects(filteredSubjects);
+            
+            // Remove active class from all sidebar links
+            const subjectLinks = document.querySelectorAll('.subject-link');
+            subjectLinks.forEach(link => link.classList.remove('active'));
+        }
+
+        // Sample data for demonstration
+        // function getSampleData(semester) {
+        //     const sampleData = {
+        //         '1': {
+        //             subjects: [
+        //                 {
+        //                     name: "Programming Fundamentals",
+        //                     code: "MCA101",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Introduction to programming concepts, algorithms, and problem-solving techniques using a high-level programming language.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#",
+        //                         "2020": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Programming Fundamentals",
+        //                             author: "Robert Sedgewick",
+        //                             link: "#"
+        //                         },
+        //                         {
+        //                             title: "Introduction to Algorithms",
+        //                             author: "Thomas H. Cormen",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Lecture Notes - Part 1",
+        //                             link: "#"
+        //                         },
+        //                         {
+        //                             title: "Lecture Notes - Part 2",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     name: "Discrete Mathematics",
+        //                     code: "MCA102",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Mathematical foundations for computer science including logic, sets, relations, functions, and graph theory.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Discrete Mathematics and Its Applications",
+        //                             author: "Kenneth H. Rosen",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Complete Lecture Notes",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     name: "Computer Organization",
+        //                     code: "MCA103",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Study of computer system components, CPU architecture, memory systems, and input/output organization.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#",
+        //                         "2020": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Computer Organization and Design",
+        //                             author: "David A. Patterson",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Lecture Slides",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     name: "Database Management Systems",
+        //                     code: "MCA104",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Introduction to database concepts, SQL, relational model, normalization, and transaction processing.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Database System Concepts",
+        //                             author: "Abraham Silberschatz",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "SQL Tutorial",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     name: "Communication Skills",
+        //                     code: "MCA105",
+        //                     credits: 2,
+        //                     type: "elective",
+        //                     description: "Development of effective communication skills for professional environments.",
+        //                     papers: {
+        //                         "2022": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Effective Communication",
+        //                             author: "John Adair",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Presentation Skills Guide",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         },
+        //         '2': {
+        //             subjects: [
+        //                 {
+        //                     name: "Data Structures",
+        //                     code: "MCA201",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Study of fundamental data structures including arrays, linked lists, stacks, queues, trees, and graphs.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Data Structures and Algorithms",
+        //                             author: "Alfred V. Aho",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Complete Notes",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 },
+        //                 {
+        //                     name: "Object Oriented Programming",
+        //                     code: "MCA202",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Principles of object-oriented programming including classes, objects, inheritance, polymorphism, and encapsulation.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Object-Oriented Programming in Java",
+        //                             author: "Kathy Sierra",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "OOP Concepts",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         },
+        //         '3': {
+        //             subjects: [
+        //                 {
+        //                     name: "Web Technologies",
+        //                     code: "MCA301",
+        //                     credits: 4,
+        //                     type: "core",
+        //                     description: "Introduction to web development including HTML, CSS, JavaScript, and server-side programming.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Web Development Guide",
+        //                             author: "Jon Duckett",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "HTML & CSS Tutorial",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         },
+        //         '4': {
+        //             subjects: [
+        //                 {
+        //                     name: "Project Work",
+        //                     code: "MCA401",
+        //                     credits: 8,
+        //                     type: "core",
+        //                     description: "Capstone project demonstrating comprehensive understanding of computer applications.",
+        //                     papers: {
+        //                         "2022": "#",
+        //                         "2021": "#"
+        //                     },
+        //                     books: [
+        //                         {
+        //                             title: "Project Management Guide",
+        //                             author: "Project Management Institute",
+        //                             link: "#"
+        //                         }
+        //                     ],
+        //                     notes: [
+        //                         {
+        //                             title: "Project Guidelines",
+        //                             link: "#"
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         }
+        //     };
+            
+        //     return sampleData[semester] || sampleData['1'];
+        // }
+    </script>
+</body>
+</html>

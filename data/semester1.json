@@ -1,0 +1,155 @@
+{
+  "semester": 1,
+  "subjects": [
+    {
+      "name": "Data Structures",
+      "type": "core",
+      "code": "MCA101",
+      "credits": 4,
+      "description": "Study of data organization, management, and storage formats",
+      "papers": {
+        "2023": "https://example.com/papers/ds_2023.pdf",
+        "2022": "https://example.com/papers/ds_2022.pdf",
+        "2021": "https://example.com/papers/ds_2021.pdf"
+      },
+      "books": [
+        {
+          "title": "Data Structures and Algorithms",
+          "author": "Mark Allen Weiss",
+          "link": "https://example.com/books/ds_book1.pdf"
+        },
+        {
+          "title": "Introduction to Algorithms",
+          "author": "Cormen et al.",
+          "link": "https://example.com/books/ds_book2.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Unit 1 - Introduction to Data Structures",
+          "link": "https://example.com/notes/ds_unit1.pdf"
+        },
+        {
+          "title": "Unit 2 - Linked Lists",
+          "link": "https://example.com/notes/ds_unit2.pdf"
+        },
+        {
+          "title": "Unit 3 - Stacks and Queues",
+          "link": "https://example.com/notes/ds_unit3.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Database Management Systems",
+      "type": "core",
+      "code": "MCA102",
+      "credits": 4,
+      "description": "Fundamentals of database systems and SQL",
+      "papers": {
+        "2023": "https://example.com/papers/dbms_2023.pdf",
+        "2022": "https://example.com/papers/dbms_2022.pdf"
+      },
+      "books": [
+        {
+          "title": "Database System Concepts",
+          "author": "Abraham Silberschatz",
+          "link": "https://example.com/books/dbms_book1.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Unit 1 - Introduction to DBMS",
+          "link": "https://example.com/notes/dbms_unit1.pdf"
+        },
+        {
+          "title": "Unit 2 - SQL Basics",
+          "link": "https://example.com/notes/dbms_unit2.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Object Oriented Programming",
+      "type": "core",
+      "code": "MCA103",
+      "credits": 3,
+      "description": "Programming paradigm based on objects and classes",
+      "papers": {
+        "2023": "https://example.com/papers/oop_2023.pdf",
+        "2022": "https://example.com/papers/oop_2022.pdf",
+        "2021": "https://example.com/papers/oop_2021.pdf"
+      },
+      "books": [
+        {
+          "title": "Object-Oriented Programming in C++",
+          "author": "Robert Lafore",
+          "link": "https://example.com/books/oop_book1.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Unit 1 - OOP Concepts",
+          "link": "https://example.com/notes/oop_unit1.pdf"
+        },
+        {
+          "title": "Unit 2 - Classes and Objects",
+          "link": "https://example.com/notes/oop_unit2.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "type": "elective",
+      "code": "MCA104",
+      "credits": 3,
+      "description": "Study of communication between computer systems",
+      "papers": {
+        "2023": "https://example.com/papers/cn_2023.pdf",
+        "2022": "https://example.com/papers/cn_2022.pdf"
+      },
+      "books": [
+        {
+          "title": "Computer Networking: A Top-Down Approach",
+          "author": "Kurose and Ross",
+          "link": "https://example.com/books/cn_book1.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Unit 1 - Network Fundamentals",
+          "link": "https://example.com/notes/cn_unit1.pdf"
+        },
+        {
+          "title": "Unit 2 - TCP/IP Protocol Suite",
+          "link": "https://example.com/notes/cn_unit2.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Programming Lab",
+      "type": "lab",
+      "code": "MCA105",
+      "credits": 2,
+      "description": "Practical programming exercises and projects",
+      "papers": {
+        "2023": "https://example.com/papers/lab_2023.pdf"
+      },
+      "books": [
+        {
+          "title": "The C Programming Language",
+          "author": "Kernighan and Ritchie",
+          "link": "https://example.com/books/lab_book1.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Lab Manual",
+          "link": "https://example.com/notes/lab_manual.pdf"
+        },
+        {
+          "title": "Sample Programs",
+          "link": "https://example.com/notes/lab_samples.pdf"
+        }
+      ]
+    }
+  ]
+}
