@@ -2,9 +2,9 @@
   "semester": 1,
   "subjects": [
     {
-      "name": "Data Structures",
+      "name": "Test_subject",
       "type": "core",
-      "code": "MCA101",
+      "code": "MCA002",
       "credits": 4,
       "description": "Study of data organization, management, and storage formats",
       "papers": {
@@ -17,139 +17,136 @@
           "title": "Data Structures and Algorithms",
           "author": "Mark Allen Weiss",
           "link": "https://example.com/books/ds_book1.pdf"
-        },
-        {
-          "title": "Introduction to Algorithms",
-          "author": "Cormen et al.",
-          "link": "https://example.com/books/ds_book2.pdf"
         }
       ],
       "notes": [
         {
           "title": "Unit 1 - Introduction to Data Structures",
           "link": "https://example.com/notes/ds_unit1.pdf"
-        },
-        {
-          "title": "Unit 2 - Linked Lists",
-          "link": "https://example.com/notes/ds_unit2.pdf"
-        },
-        {
-          "title": "Unit 3 - Stacks and Queues",
-          "link": "https://example.com/notes/ds_unit3.pdf"
         }
       ]
     },
-    {
-      "name": "Database Management Systems",
+
+     {
+      "name": "Programming with C++",
       "type": "core",
-      "code": "MCA102",
+      "code": "MCA24101CR",
+      "credits": 6,
+      "description": "Programming in C++",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Database Systems",
+      "type": "core",
+      "code": "MCA24102CR",
+      "credits": 6,
+      "description": "Database concepts and SQL programming",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Discrete Mathematics",
+      "type": "core",
+      "code": "MCA24103CR",
       "credits": 4,
-      "description": "Fundamentals of database systems and SQL",
-      "papers": {
-        "2023": "https://example.com/papers/dbms_2023.pdf",
-        "2022": "https://example.com/papers/dbms_2022.pdf"
-      },
-      "books": [
-        {
-          "title": "Database System Concepts",
-          "author": "Abraham Silberschatz",
-          "link": "https://example.com/books/dbms_book1.pdf"
-        }
-      ],
-      "notes": [
-        {
-          "title": "Unit 1 - Introduction to DBMS",
-          "link": "https://example.com/notes/dbms_unit1.pdf"
-        },
-        {
-          "title": "Unit 2 - SQL Basics",
-          "link": "https://example.com/notes/dbms_unit2.pdf"
-        }
-      ]
-    },
-    {
-      "name": "Object Oriented Programming",
-      "type": "core",
-      "code": "MCA103",
-      "credits": 3,
-      "description": "Programming paradigm based on objects and classes",
-      "papers": {
-        "2023": "https://example.com/papers/oop_2023.pdf",
-        "2022": "https://example.com/papers/oop_2022.pdf",
-        "2021": "https://example.com/papers/oop_2021.pdf"
-      },
-      "books": [
-        {
-          "title": "Object-Oriented Programming in C++",
-          "author": "Robert Lafore",
-          "link": "https://example.com/books/oop_book1.pdf"
-        }
-      ],
-      "notes": [
-        {
-          "title": "Unit 1 - OOP Concepts",
-          "link": "https://example.com/notes/oop_unit1.pdf"
-        },
-        {
-          "title": "Unit 2 - Classes and Objects",
-          "link": "https://example.com/notes/oop_unit2.pdf"
-        }
-      ]
+      "description": "Fundamentals of discrete mathematical structures",
+      "papers": {},
+      "books": [],
+      "notes": []
     },
     {
       "name": "Computer Networks",
       "type": "elective",
-      "code": "MCA104",
-      "credits": 3,
-      "description": "Study of communication between computer systems",
-      "papers": {
-        "2023": "https://example.com/papers/cn_2023.pdf",
-        "2022": "https://example.com/papers/cn_2022.pdf"
-      },
-      "books": [
-        {
-          "title": "Computer Networking: A Top-Down Approach",
-          "author": "Kurose and Ross",
-          "link": "https://example.com/books/cn_book1.pdf"
-        }
-      ],
-      "notes": [
-        {
-          "title": "Unit 1 - Network Fundamentals",
-          "link": "https://example.com/notes/cn_unit1.pdf"
-        },
-        {
-          "title": "Unit 2 - TCP/IP Protocol Suite",
-          "link": "https://example.com/notes/cn_unit2.pdf"
-        }
-      ]
+      "code": "MCA24104DCE",
+      "credits": 4,
+      "description": "Introduction to computer networking",
+      "papers": {},
+      "books": [],
+      "notes": []
     },
     {
-      "name": "Programming Lab",
-      "type": "lab",
-      "code": "MCA105",
+      "name": "Computer Graphics",
+      "type": "elective",
+      "code": "MCA24105DCE",
+      "credits": 4,
+      "description": "Basics of computer graphics and visualization",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Management Information System",
+      "type": "elective",
+      "code": "MCA24106DCE",
+      "credits": 4,
+      "description": "Role of MIS in organizations",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Software Engineering",
+      "type": "elective",
+      "code": "MCA24107DCE",
+      "credits": 4,
+      "description": "Software development methodologies",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Artificial Intelligence",
+      "type": "elective",
+      "code": "MCA24108DCE",
+      "credits": 4,
+      "description": "Fundamentals of AI and machine reasoning",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Blockchain Technologies",
+      "type": "elective",
+      "code": "MCA24109DCE",
+      "credits": 4,
+      "description": "Introduction to blockchain and decentralized systems",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Computer Architecture & ALP",
+      "type": "elective",
+      "code": "MCA24110DCE",
+      "credits": 4,
+      "description": "Architecture of computer systems and assembly language programming",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Digital and Technological Solutions",
+      "type": "open",
+      "code": "MCA24001OE",
       "credits": 2,
-      "description": "Practical programming exercises and projects",
-      "papers": {
-        "2023": "https://example.com/papers/lab_2023.pdf"
-      },
-      "books": [
-        {
-          "title": "The C Programming Language",
-          "author": "Kernighan and Ritchie",
-          "link": "https://example.com/books/lab_book1.pdf"
-        }
-      ],
-      "notes": [
-        {
-          "title": "Lab Manual",
-          "link": "https://example.com/notes/lab_manual.pdf"
-        },
-        {
-          "title": "Sample Programs",
-          "link": "https://example.com/notes/lab_samples.pdf"
-        }
-      ]
+      "description": "Open elective for students of other departments",
+      "papers": {},
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Data Processing using Spreadsheets",
+      "type": "general",
+      "code": "MCA24001GE",
+      "credits": 2,
+      "description": "Spreadsheet usage for data analysis",
+      "papers": {},
+      "books": [],
+      "notes": []
     }
   ]
+ 
 }
