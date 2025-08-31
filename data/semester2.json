@@ -7,7 +7,10 @@
       "code": "MCA24201CR",
       "credits": 6,
       "description": "Advanced data structures using C++",
-      "papers": {},
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1V1q6Dhu9m1DD9J1PvrqS0splsi62k0EY/view",
+        "2023":"https://drive.google.com/file/d/1XLF94UF5NBO7bw6P4vRUb5vRYLhJ5lih/view"
+      },
       "books": [],
       "notes": []
     },

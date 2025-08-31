@@ -1,7 +1,6 @@
 {
   "semester": 1,
   "subjects": [
-  
     {
       "name": "Programming with C++",
       "type": "core",
@@ -101,35 +100,35 @@
       "credits": 4,
       "description": "Introduction to computer networking",
       "papers": {
-        "2022":"https://drive.google.com/file/d/1atWjP4AW8I75h_hwfOiROvgbHSMD0thB/view",
-        "2023":"https://drive.google.com/file/d/1YFOAd0ZHx4vlkq7zfV5ZMkjkwVTTBS47/view",
+        "2022": "https://drive.google.com/file/d/1atWjP4AW8I75h_hwfOiROvgbHSMD0thB/view",
+        "2023": "https://drive.google.com/file/d/1YFOAd0ZHx4vlkq7zfV5ZMkjkwVTTBS47/view",
         "2024": "https://drive.google.com/file/d/16dQ5Z8c-6pZjWS1ZUrYkkj_emdlmUPhc/view"
       },
       "books": [
         {
-          "title":"Computer Networking: Principles, Protocoles and Practice",
-          "author":"Olivier Bonaventure",
-          "link":"https://drive.google.com/file/d/1s196WV1zuXFr2C_pXqT7MOqY72Aa98Oo/view"
+          "title": "Computer Networking: Principles, Protocoles and Practice",
+          "author": "Olivier Bonaventure",
+          "link": "https://drive.google.com/file/d/1s196WV1zuXFr2C_pXqT7MOqY72Aa98Oo/view"
         },
         {
-          "title":"Computer Networks: A System Approach",
-          "author":"Peterson and Davie",
-          "link":"https://drive.google.com/file/d/1btKfrrRVGC-F3SBpxUmb-MbSkceCkXzr/view"
+          "title": "Computer Networks: A System Approach",
+          "author": "Peterson and Davie",
+          "link": "https://drive.google.com/file/d/1btKfrrRVGC-F3SBpxUmb-MbSkceCkXzr/view"
         },
         {
-          "title":"Computer Networking:A top Down Approach",
-          "author":"Kurose / Ross",
-          "link":"https://drive.google.com/file/d/1VhMH6d4npRwsYnvPAaTu-CKqfcxqkIHk/view"
+          "title": "Computer Networking:A top Down Approach",
+          "author": "Kurose / Ross",
+          "link": "https://drive.google.com/file/d/1VhMH6d4npRwsYnvPAaTu-CKqfcxqkIHk/view"
         }
       ],
       "notes": [
         {
-          "title":"Lecture Notes",
-          "link":"https://drive.google.com/file/d/11qPdJ_QAj-PmL0a0QTCF-qE3BxLggf26/view"
+          "title": "Lecture Notes",
+          "link": "https://drive.google.com/file/d/11qPdJ_QAj-PmL0a0QTCF-qE3BxLggf26/view"
         },
         {
-          "title":"Lecture Notes - Chadalawada Ramanamma Engineering college",
-          "link":"https://drive.google.com/file/d/1KFPdH1DKmCN_-lp5RREMA25B_NN2S5cN/view"
+          "title": "Lecture Notes - Chadalawada Ramanamma Engineering college",
+          "link": "https://drive.google.com/file/d/1KFPdH1DKmCN_-lp5RREMA25B_NN2S5cN/view"
         }
       ]
     },
@@ -160,39 +159,38 @@
       "credits": 4,
       "description": "Software development methodologies",
       "papers": {
-        "2022":"https://drive.google.com/file/d/1HOmlNOtZStV7KFJ7TVUUYAWchbXLOQaO/view",
-        "2023":"https://drive.google.com/file/d/158lrt4wXeN6KQ0-iB_AP-7Fq3aHIiVGr/view",
-        "2024":"https://drive.google.com/file/d/1PsMYTTqII9VWINUQwnDas_6BCclDOOgX/view"
+        "2022": "https://drive.google.com/file/d/1HOmlNOtZStV7KFJ7TVUUYAWchbXLOQaO/view",
+        "2023": "https://drive.google.com/file/d/158lrt4wXeN6KQ0-iB_AP-7Fq3aHIiVGr/view",
+        "2024": "https://drive.google.com/file/d/1PsMYTTqII9VWINUQwnDas_6BCclDOOgX/view"
       },
       "books": [
         {
-          "title":"Software Engineering",
-          "author":"Ian Sommerville",
-          "link":"https://maqsoodhussain.github.io/mca_old/assets/web_material/books/Software%20Engineering%20-%20Ian%20Sommerville.pdf"
+          "title": "Software Engineering",
+          "author": "Ian Sommerville",
+          "link": "https://maqsoodhussain.github.io/mca_old/assets/web_material/books/Software%20Engineering%20-%20Ian%20Sommerville.pdf"
         }
       ],
       "notes": [
         {
-          "title":"Book Short notes - drive folder",
-          "link":"https://drive.google.com/drive/folders/157bneXtjoQg8fyc9CPlwaZmxKArLx85H"
+          "title": "Book Short notes - drive folder",
+          "link": "https://drive.google.com/drive/folders/157bneXtjoQg8fyc9CPlwaZmxKArLx85H"
         },
         {
-          "title":"Complete Notes",
-          "link":"https://drive.google.com/file/d/1wy4YDim1tf2z_kVxnwabNJYckgtob3Iz/view"
-        },
-         {
-          "title":"Complete Notes",
-          "link":"https://drive.google.com/file/d/1x3DVAuYAFUQGLlEA4ro4HjI_q_8svleN/view"
-        },
-         {
-          "title":"Complete Notes",
-          "link":"https://drive.google.com/file/d/1wrAR6OxdBDMUGZ-K3wmEtNQIQQdEpByl/view"
+          "title": "Complete Notes",
+          "link": "https://drive.google.com/file/d/1wy4YDim1tf2z_kVxnwabNJYckgtob3Iz/view"
         },
         {
-          "title":"Book Short notes - drive folder",
-          "link":"https://drive.google.com/drive/folders/17xOL661_usB9TgKP_zZHWFKN-Flbv2m3?usp=drive_link"
+          "title": "Complete Notes",
+          "link": "https://drive.google.com/file/d/1x3DVAuYAFUQGLlEA4ro4HjI_q_8svleN/view"
+        },
+        {
+          "title": "Complete Notes",
+          "link": "https://drive.google.com/file/d/1wrAR6OxdBDMUGZ-K3wmEtNQIQQdEpByl/view"
+        },
+        {
+          "title": "Book Short notes - drive folder",
+          "link": "https://drive.google.com/drive/folders/17xOL661_usB9TgKP_zZHWFKN-Flbv2m3?usp=drive_link"
         }
-
       ]
     },
     {
@@ -202,15 +200,15 @@
       "credits": 4,
       "description": "Fundamentals of AI and machine reasoning",
       "papers": {
-        "2022":"https://drive.google.com/file/d/1qUJIY9qfMcqALjVUfgbY6L09VAKq4m_6/view",
-        "2023":"https://drive.google.com/file/d/11X-ryacr43h7Q-6C_zVNjgnQZ24yQz2V/view",
+        "2022": "https://drive.google.com/file/d/1qUJIY9qfMcqALjVUfgbY6L09VAKq4m_6/view",
+        "2023": "https://drive.google.com/file/d/11X-ryacr43h7Q-6C_zVNjgnQZ24yQz2V/view",
         "2024": "https://drive.google.com/file/d/16RoHBgTitLei0hFNLiCMBzq891fBoZDW/view"
       },
       "books": [
         {
-          "title":"Artificial Intelligence – A Modern Approach",
-          "author":"Stuart Russel, Peter Norvig",
-          "link":"https://maqsoodhussain.github.io/mca_old/assets/web_material/books/AI%20PEARSON%20MODERN%20APPROACH.pdf"
+          "title": "Artificial Intelligence – A Modern Approach",
+          "author": "Stuart Russel, Peter Norvig",
+          "link": "https://maqsoodhussain.github.io/mca_old/assets/web_material/books/AI%20PEARSON%20MODERN%20APPROACH.pdf"
         }
       ],
       "notes": []
@@ -232,20 +230,18 @@
       "credits": 4,
       "description": "Architecture of computer systems and assembly language programming",
       "papers": {
-        "2022":"https://drive.google.com/file/d/1bAM0btP7B_4ImXe4YctUVntWyvwB7Agd/view",
-        "2023":"https://drive.google.com/file/d/1YzvP0F4qJ2nvly5g2C3wJbHZ6QSMCows/view"
+        "2022": "https://drive.google.com/file/d/1bAM0btP7B_4ImXe4YctUVntWyvwB7Agd/view",
+        "2023": "https://drive.google.com/file/d/1YzvP0F4qJ2nvly5g2C3wJbHZ6QSMCows/view"
       },
-      "books": [
-
-      ],
+      "books": [],
       "notes": [
         {
-          "title":"Dr WASIM AHAMD BHAT - Original Notes",
-          "link":"https://drive.google.com/drive/folders/1ubStPJbioOLTcoedtO7LN9qefaN4dFEJ?usp=drive_link"
+          "title": "Dr WASIM AHAMD BHAT - Original Notes",
+          "link": "https://drive.google.com/drive/folders/1ubStPJbioOLTcoedtO7LN9qefaN4dFEJ?usp=drive_link"
         },
-         {
-          "title":"Computer ALP",
-          "link":"https://maqsoodhussain.github.io/emunotes/"
+        {
+          "title": "Computer ALP",
+          "link": "https://maqsoodhussain.github.io/emunotes/"
         }
       ]
     },
