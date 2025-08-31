@@ -150,6 +150,50 @@
           "link": "https://example.com/notes/lab_samples.pdf"
         }
       ]
+    },
+    {
+      "name": "Java Programming",
+      "type": "core",
+      "code": "MCA302",
+      "credits": 4,
+      "description": " Creation of Java, overview and How Java changed the Internet. ",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1kns9pEaNsI6dOxeoNUDvagcg_7K3_Vxh/view"
+      },
+      "books": [
+        {
+          "title": "Java The Complete Refrence",
+          "author": "Herbert Schildt",
+          "link": "https://drive.google.com/file/d/1UTPL_NQaTe8sclL2KeNa0-aQT6FmZEHG/view?usp=sharing"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Notes by Dr. Wasim",
+          "link": "https://drive.google.com/drive/folders/1XE0vwgch_SGsMxJ7IMcyIyMlqvpcCK3u?usp=drive_link"
+        },
+        {
+          "title": "Complete Java Notes",
+          "link": "https://drive.google.com/drive/folders/190z1rBSE_-Dco5T_AOdpf54Kn6eWnOfG?usp=drive_link"
+        },
+        {
+          "title": "All Units of java",
+          "link": "https://drive.google.com/drive/folders/1MM4W4yY4TSjhZlW3Q3Pru7SdluROl-ud?usp=drive_link"
+        },
+        {
+          "title": "Notes by Code with Harry",
+          "link": "https://drive.google.com/file/d/1kGecVa1NQqtnPvwgy0GENP8WWGbTsSj3/view"
+        },
+        {
+          "title": "Notes by MALLA REDDY COLLEGE OF ENGINEERING & TECHNOLOGY",
+          "link": "https://drive.google.com/file/d/1eT58dqPZvE0dGaAin06Q2LgR0-d_XX3F/view"
+        },
+         {
+          "title": "Code with harry digital notes",
+          "link": "https://www.codewithharry.com/tutorial/java"
+        }
+        
+      ]
     }
   ]
 }
