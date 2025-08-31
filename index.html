@@ -490,63 +490,94 @@
 </head>
 
 <body>
-<!-- New Website Maintenance Modal -->
-<div class="modal fade" id="maintenanceModal" tabindex="-1" aria-labelledby="maintenanceModalLabel"
-    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-4 shadow">
-            <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold" id="maintenanceModalLabel">New Website Under Maintenance</h5>
-            </div>
-            <div class="modal-body text-center">
-                <p class="mb-4">
-                    Our new website <b>(2023 Onwards Batch)</b> is currently under maintenance. Our developers are working hard to bring it back online.
-                    <b>In the meantime, you can access the old website below.</b>
-                </p>
-                <a href="https://maqsoodhussain.github.io/mca_old" target="_blank" class="btn btn-gradient px-4 py-2 mb-3">
-                    Go to Old Website
-                </a>
+    <!-- Website Maintenance Modal -->
+    <div class="modal fade" id="maintenanceModal" tabindex="-1" aria-labelledby="maintenanceModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow">
+                <!-- Modal Header -->
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="maintenanceModalLabel">🚧 Website Under Maintenance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-                <hr class="my-4">
+                <!-- Modal Body -->
+                <div class="modal-body text-center px-4">
+                    <p class="mb-3">
+                        Our new website <strong>(2023 Onwards Batch)</strong> is currently under maintenance. <br>
+                    <div class="alert alert-danger py-2 small mb-4" role="alert">
+                        Only the first semester is 90% uploaded. Our developers are actively working on uploading the
+                        rest of the semester’s materials. Please be patient, and we will share the updated version soon.
+                    </div>
 
-                <p class="mb-2"><strong>Contact us if you have any query:</strong></p>
-                <div class="d-flex justify-content-center gap-4">
-                    <!-- GitHub -->
-                    <a href="https://github.com/maqsoodhussain" target="_blank" class="text-dark fs-4">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <!-- Email -->
-                    <a href="mailto:thegreattechofficial@gmail.com" class="text-dark fs-4">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/917889528326" target="_blank" class="text-success fs-4">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                    If you notice any issues or missing content, please don’t hesitate to contact the developer. <a
+                        href="mailto:themaqsoodhussainwani@gmail.com">Here</a>
+                    </p>
+
+                    <div class="alert alert-warning py-2 small mb-4" role="alert">
+                        Contributions are welcome! If you’d like to help or share feedback, please reach out below.
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="d-grid gap-2 mb-4">
+                        <a href="mailto:thegreattechofficial@gmail.com" class="btn btn-outline-primary">
+                            📧 Email Us to Contribute
+                        </a>
+                        <a href="#contribute" id="goToContributeBtn" class="btn btn-outline-secondary">
+                            📝 Join Community Group
+                        </a>
+                        <a href="https://maqsoodhussain.github.io/mca_old" target="_blank" class="btn btn-gradient">
+                            🔄 Visit Old Website
+                        </a>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Contact Info -->
+                    <p class="mb-2 fw-semibold">Need Help? Reach Us:</p>
+                    <div class="d-flex justify-content-center gap-4 fs-4">
+                        <a href="https://github.com/maqsoodhussain" target="_blank" class="text-dark" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:thegreattechofficial@gmail.com" class="text-dark" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/917889528326" target="_blank" class="text-success" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- JavaScript to Show Modal and Handle Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modalEl = document.getElementById('maintenanceModal');
+            const maintenanceModal = new bootstrap.Modal(modalEl);
+            maintenanceModal.show();
 
+            const goToContributeBtn = document.getElementById("goToContributeBtn");
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // ✅ Show maintenance modal on page load
-        var maintenanceModal = new bootstrap.Modal(document.getElementById('maintenanceModal'));
-        maintenanceModal.show();
-
-        // ✅ Optional: Allow manual opening via specific link or button (with data attribute)
-        const triggerLinks = document.querySelectorAll('[data-open-maintenance]');
-        triggerLinks.forEach(link => {
-            link.addEventListener("click", function (e) {
+            goToContributeBtn.addEventListener("click", function (e) {
                 e.preventDefault();
-                maintenanceModal.show();
+
+                // Add event listener to wait for modal to be fully hidden
+                modalEl.addEventListener('hidden.bs.modal', function () {
+                    const contributeSection = document.getElementById("contribute");
+                    if (contributeSection) {
+                        contributeSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, { once: true });
+
+                // Hide the modal
+                maintenanceModal.hide();
             });
         });
-    });
-</script>
+    </script>
+
+
 
 
 
@@ -577,7 +608,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resources"><i class="fas fa-download me-1"></i> Resources</a>
+                        <a class="nav-link" href="https://maqsoodhussain.github.io/mca_old/software.html"><i
+                                class="fas fa-download me-1"></i> softwares</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> About</a>
@@ -607,12 +639,13 @@
                 Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and exam resources —
                 empowering students for the future of technology.
                 If you wish to access the previous syllabus and resources, <a
-                    href="https://maqsoodhussain.github.io/mca/syllabus.html">click here</a>.
+                    href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus">click here</a>.
             </p>
 
 
             <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="#syllabus" class="btn btn-light btn-lg px-4 py-2">
+                <a href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus"
+                    class="btn btn-light btn-lg px-4 py-2">
                     <i class="fas fa-download me-2"></i>Download Syllabus
                 </a>
                 <a href="#semesters" class="btn btn-outline-light btn-lg px-4 py-2">
@@ -657,7 +690,8 @@
                             Access the detailed MCA syllabus (latest 2023 onwords batch). For older batches,
                             <a href="https://maqsoodhussain.github.io/mca">click here</a>.
                         </p>
-                        <a id="syllabus" href="MCA_New_Syllabus_2025.pdf" class="btn btn-gradient w-100 py-2">
+                        <a id="syllabus" href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus"
+                            class="btn btn-gradient w-100 py-2">
                             <i class="fas fa-download me-2"></i> Download Full Syllabus (PDF)
                         </a>
                     </div>
@@ -838,7 +872,7 @@
                         </div>
 
                         <!-- NEW CARD: Student Contributions -->
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="contribute">
                             <div class="card h-100 border-0 shadow-lg rounded-4">
                                 <div class="card-body p-5 text-center">
                                     <div class="d-flex flex-column align-items-center mb-4">
@@ -857,15 +891,42 @@
                                         Share your <strong>notes, books, past papers, or project ideas</strong> and help
                                         empower the MCA community.
                                     </p>
-
-                                    <a href="#contribute" class="btn btn-gradient px-4 py-2 rounded-pill shadow-sm">
+                                    <!-- Contribute Now Button -->
+                                    <a href="#" class="btn btn-gradient px-4 py-2 rounded-pill shadow-sm"
+                                        data-bs-toggle="modal" data-bs-target="#contributeModal">
                                         <i class="fas fa-plus-circle me-2"></i> Contribute Now
                                     </a>
+
+
                                 </div>
                             </div>
                         </div>
                         <!-- END NEW CARD -->
 
+<!-- NEW CARD: Join TechHive -->
+<div class="col-md-12" id="join-techhive">
+  <div class="card h-100 border-0 shadow-lg rounded-4">
+    <div class="card-body p-5 text-center">
+      <div class="d-flex flex-column align-items-center mb-4">
+        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mb-3"
+          style="width: 70px; height: 70px;">
+          <i class="fas fa-rocket text-primary fs-2"></i>
+        </div>
+        <h3 class="fw-bold mb-2">Join Our Platform: TechHive</h3>
+        <p class="text-muted mb-0">Access a variety of services completely <span class="fw-semibold text-primary">for free</span>!</p>
+      </div>
+
+      <p class="mb-4 fs-6">
+        Become a part of TechHive to enjoy <strong>Share, Connect, AI and community support</strong>. Empower your learning journey with us.
+      </p>
+      
+      <!-- Join Now Button -->
+      <a href="https://thetechhive.free.nf" target="_blank" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+        <i class="fas fa-sign-in-alt me-2"></i> Join Now
+      </a>
+    </div>
+  </div>
+</div>
 
                         <!-- Tech Stack Section -->
                         <section class="container my-5">
@@ -923,6 +984,8 @@
                             </div>
                         </section>
 
+
+                        
                     </div>
                 </div>
             </div>
@@ -967,12 +1030,11 @@
                         <div class="card-body text-center p-4">
                             <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
                                 style="width: 70px; height: 70px;">
-                                <i class="fas fa-video text-warning fs-3"></i>
+                                <i class="fas fa-gear text-warning fs-3"></i>
                             </div>
-                            <h5 class="card-title fw-bold">Video Lectures</h5>
-                            <p class="card-text">Watch recorded lectures and tutorials to enhance your understanding of
-                                complex topics.</p>
-                            <a href="#" class="btn btn-outline-warning mt-3">Explore</a>
+                            <h5 class="card-title fw-bold">Free softwares</h5>
+                            <p class="card-text">Download Free softwares that you need During MCA Program.</p>
+                            <a href="https://maqsoodhussain.github.io/mca_old/software.html" class="btn btn-outline-warning mt-3">Explore</a>
                         </div>
                     </div>
                 </div>
@@ -1045,18 +1107,30 @@
                 <!-- About -->
                 <div class="col-lg-4 col-md-6">
                     <h4 class="fw-bold mb-3">MCA NORTH CAMPUS </h4>
-                    <p class="small">Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and exam resources —
-                empowering students for the future of technology.</p>
+                    <p class="small">Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and
+                        exam resources —
+                        empowering students for the future of technology.</p>
 
                     <!-- Social Media -->
                     <div class="d-flex gap-3 mt-3">
-                        <a href="https://wa.me/+917889528326" class="text-white fs-5 social-link"><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a href="https://github.com/thegreattech" class="text-white fs-5 social-link"><i
-                                class="fab fa-github"></i></a>
-                        <!-- <a href="#" class="text-white fs-5 social-link"><i class="fab fa-"></i></a>
-                        <a href="#" class="text-white fs-5 social-link"><i class="fab fa-github"></i></a> -->
+                        <a href="https://wa.me/+917889528326" class="text-white fs-5 social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/DX8Yts44nyWFWg7e0bKg5N?mode=ems_copy_t"
+                            class="text-white fs-5 social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/maqsoodhussain" class="text-white fs-5 social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:themaqsoodhussainwani@gmail.com" class="text-white fs-5 social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://maqsoodhussain.github.io" class="text-white fs-5 social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
                     </div>
+
                 </div>
 
                 <!-- Quick Links -->
@@ -1113,6 +1187,62 @@
             </div>
         </div>
     </footer>
+    <!-- Modern Contribute Modal -->
+    <div class="modal fade" id="contributeModal" tabindex="-1" aria-labelledby="contributeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg rounded-4">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-light border-0 rounded-top-4 px-4 pt-4">
+                    <h5 class="modal-title fw-bold text-primary" id="contributeModalLabel">
+                        🤝 Become a Contributor
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body px-4 py-3">
+
+                    <!-- Introduction -->
+                    <p class="text-muted text-center mb-4">
+                        We're excited to have you on board! Please read the contribution guidelines and join the
+                        WhatsApp group to collaborate with others.
+                    </p>
+
+                    <!-- Guidelines -->
+                    <div class="mb-4">
+                        <h6 class="fw-semibold text-dark mb-3"><i
+                                class="fas fa-list-check me-2 text-success"></i>Contribution Guidelines</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">✅ Be respectful and collaborative with others.</li>
+                            <li class="list-group-item">✅ Share only relevant and valuable content.</li>
+                            <li class="list-group-item">✅ Avoid spam or excessive self-promotion.</li>
+                            <li class="list-group-item">✅ Follow group rules and read pinned messages.</li>
+                            <li class="list-group-item">✅ Help others and ask questions freely!</li>
+                        </ul>
+                    </div>
+
+                    <!-- WhatsApp Join Section -->
+                    <div class="text-center mt-4">
+                        <h6 class="fw-semibold mb-3"><i class="fab fa-whatsapp me-2 text-success"></i>Join Our WhatsApp
+                            Group</h6>
+                        <div class="mb-3">
+                            <img src="assets/whatsappqr.png" alt="WhatsApp Group QR Code"
+                                class="img-fluid rounded-3 border shadow-sm" style="max-width: 200px;">
+                        </div>
+                        <p class="text-muted small mb-3">Scan the QR code or click the button below to join.</p>
+                        <a href="https://chat.whatsapp.com/DX8Yts44nyWFWg7e0bKg5N?mode=ems_copy_t" target="_blank"
+                            class="btn btn-success px-4 py-2 rounded-pill shadow-sm">
+                            <i class="fab fa-whatsapp me-2"></i> Join WhatsApp Group
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
@@ -1126,16 +1256,17 @@
         const backToTopBtn = document.querySelector('.back-to-top');
         const contributorsContainer = document.getElementById('contributorsContainer');
 
-        // Dark Mode Toggle
+        // Dark Mode Toggle code disabled right now 
         function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
+
+            // document.body.classList.toggle('dark-mode');
+            // const isDarkMode = document.body.classList.contains('dark-mode');
+            // localStorage.setItem('darkMode', isDarkMode);
 
             // Update icon
-            const icon = darkModeToggle.querySelector('i');
-            icon.classList.toggle('fa-moon', !isDarkMode);
-            icon.classList.toggle('fa-sun', isDarkMode);
+            // const icon = darkModeToggle.querySelector('i');
+            // icon.classList.toggle('fa-moon', !isDarkMode);
+            // icon.classList.toggle('fa-sun', isDarkMode);
         }
 
         // Check for saved dark mode preference

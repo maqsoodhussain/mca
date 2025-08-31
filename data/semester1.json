@@ -1,41 +1,31 @@
 {
   "semester": 1,
   "subjects": [
+  
     {
-      "name": "Test_subject",
-      "type": "core",
-      "code": "MCA002",
-      "credits": 4,
-      "description": "Study of data organization, management, and storage formats",
-      "papers": {
-        "2023": "https://example.com/papers/ds_2023.pdf",
-        "2022": "https://example.com/papers/ds_2022.pdf",
-        "2021": "https://example.com/papers/ds_2021.pdf"
-      },
-      "books": [
-        {
-          "title": "Data Structures and Algorithms",
-          "author": "Mark Allen Weiss",
-          "link": "https://example.com/books/ds_book1.pdf"
-        }
-      ],
-      "notes": [
-        {
-          "title": "Unit 1 - Introduction to Data Structures",
-          "link": "https://example.com/notes/ds_unit1.pdf"
-        }
-      ]
-    },
-
-     {
       "name": "Programming with C++",
       "type": "core",
       "code": "MCA24101CR",
       "credits": 6,
       "description": "Programming in C++",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022": "https://drive.google.com/file/d/1azNnnYXfsSWk7-z7xzcX0AeA-q1xqeou/view",
+        "2023": "https://drive.google.com/file/d/1Y_v2cBeeO7GRunyQtYorkl5wVy3wSf-T/view",
+        "2024": "https://drive.google.com/file/d/16ZS_-tGASf5AMS1y4IHZFiCGMMe6fbb0/view"
+      },
+      "books": [
+        {
+          "title": "C++ fOR Dummies",
+          "author": "Stephen Randy Davis",
+          "link": "https://drive.google.com/file/d/1d2g-NYJqYB_jonRFWI-eMMQNX70wptzW/view"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Lecture Notes-Full",
+          "link": "https://drive.google.com/file/d/1cuc80tWAlT5avsp_cUY7A2-O2RjXKVjL/view"
+        }
+      ]
     },
     {
       "name": "Database Systems",
@@ -43,9 +33,33 @@
       "code": "MCA24102CR",
       "credits": 6,
       "description": "Database concepts and SQL programming",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022": "https://drive.google.com/file/d/1azI0cJAihUIt6UirX7fh4ugt2E-8ThRA/view",
+        "2023": "https://drive.google.com/file/d/1YVET_ktHdEE9EEeeQ8vjEkNUCTjWNFt0/view",
+        "2024": "https://drive.google.com/file/d/16P2FshDz-yl0pr2g98yyEpPvgiVOZm2s/view"
+      },
+      "books": [
+        {
+          "title": "DBMS - 2nd Edition",
+          "author": "Raghu Ramakrishnan / Johannes Gehrke",
+          "link": "https://drive.google.com/file/d/1-Nl-vzgzuvxHD-eCjeVAOLLZY08CeluJ/view"
+        },
+        {
+          "title": "DataBase System Concepts - Sixth Edition",
+          "author": "Abraham Silberschatz / Henry F.Korth / S. Sudarshan",
+          "link": "https://drive.google.com/file/d/15Yg_rpb55LIEevEpRH152W3FSOqv4xKJ/view"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Lecture Notes - Handwritten",
+          "link": "https://drive.google.com/file/d/10kQIDwrXYsNOgJKQnuMBeapp-AL3NsEF/view"
+        },
+        {
+          "title": "Lecture Notes - Drive Folder",
+          "link": "https://drive.google.com/drive/folders/1Z952ZNbcPFkQ-WEqHtF9GilX6LWwjZWu"
+        }
+      ]
     },
     {
       "name": "Discrete Mathematics",
@@ -53,9 +67,32 @@
       "code": "MCA24103CR",
       "credits": 4,
       "description": "Fundamentals of discrete mathematical structures",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022": "https://drive.google.com/file/d/1b1Jcwa_N-i0oX7xm1-hL0v2TZn0eIrKk/view",
+        "2023": "https://drive.google.com/file/d/1YZAS2ZOp09-Qj_FddvgGScSd99z6BxGP/view",
+        "2024": "https://drive.google.com/file/d/16YMJATbsJDmyizcKHVKfAthGXHYCNb05/view"
+      },
+      "books": [
+        {
+          "title": "Discrete Mathematics",
+          "author": "Oscar Levin",
+          "link": "https://drive.google.com/file/d/1EorRdUTpqBQbkmY6bXCvXpwV6SIulph5/view"
+        }
+      ],
+      "notes": [
+        {
+          "title": "Lecture Notes - Drive Folder",
+          "author": "https://drive.google.com/drive/folders/1akUcSvdRs0XAG3T8gwHnV1KEkaxickw6"
+        },
+        {
+          "title": "Lecture Notes - Malla Reddy College",
+          "author": "https://drive.google.com/file/d/1dpxpjlAOdfn6yyPq9eF4QsNaglF9Hc4i/view"
+        },
+        {
+          "title": "Lecture Notes -",
+          "author": "https://drive.google.com/file/d/1S417FjANG0yTpkaaHZ0rwB9ZbQ2a3E8v/view"
+        }
+      ]
     },
     {
       "name": "Computer Networks",
@@ -63,9 +100,38 @@
       "code": "MCA24104DCE",
       "credits": 4,
       "description": "Introduction to computer networking",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1atWjP4AW8I75h_hwfOiROvgbHSMD0thB/view",
+        "2023":"https://drive.google.com/file/d/1YFOAd0ZHx4vlkq7zfV5ZMkjkwVTTBS47/view",
+        "2024": "https://drive.google.com/file/d/16dQ5Z8c-6pZjWS1ZUrYkkj_emdlmUPhc/view"
+      },
+      "books": [
+        {
+          "title":"Computer Networking: Principles, Protocoles and Practice",
+          "author":"Olivier Bonaventure",
+          "link":"https://drive.google.com/file/d/1s196WV1zuXFr2C_pXqT7MOqY72Aa98Oo/view"
+        },
+        {
+          "title":"Computer Networks: A System Approach",
+          "author":"Peterson and Davie",
+          "link":"https://drive.google.com/file/d/1btKfrrRVGC-F3SBpxUmb-MbSkceCkXzr/view"
+        },
+        {
+          "title":"Computer Networking:A top Down Approach",
+          "author":"Kurose / Ross",
+          "link":"https://drive.google.com/file/d/1VhMH6d4npRwsYnvPAaTu-CKqfcxqkIHk/view"
+        }
+      ],
+      "notes": [
+        {
+          "title":"Lecture Notes",
+          "link":"https://drive.google.com/file/d/11qPdJ_QAj-PmL0a0QTCF-qE3BxLggf26/view"
+        },
+        {
+          "title":"Lecture Notes - Chadalawada Ramanamma Engineering college",
+          "link":"https://drive.google.com/file/d/1KFPdH1DKmCN_-lp5RREMA25B_NN2S5cN/view"
+        }
+      ]
     },
     {
       "name": "Computer Graphics",
@@ -93,9 +159,41 @@
       "code": "MCA24107DCE",
       "credits": 4,
       "description": "Software development methodologies",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1HOmlNOtZStV7KFJ7TVUUYAWchbXLOQaO/view",
+        "2023":"https://drive.google.com/file/d/158lrt4wXeN6KQ0-iB_AP-7Fq3aHIiVGr/view",
+        "2024":"https://drive.google.com/file/d/1PsMYTTqII9VWINUQwnDas_6BCclDOOgX/view"
+      },
+      "books": [
+        {
+          "title":"Software Engineering",
+          "author":"Ian Sommerville",
+          "link":"https://maqsoodhussain.github.io/mca_old/assets/web_material/books/Software%20Engineering%20-%20Ian%20Sommerville.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "title":"Book Short notes - drive folder",
+          "link":"https://drive.google.com/drive/folders/157bneXtjoQg8fyc9CPlwaZmxKArLx85H"
+        },
+        {
+          "title":"Complete Notes",
+          "link":"https://drive.google.com/file/d/1wy4YDim1tf2z_kVxnwabNJYckgtob3Iz/view"
+        },
+         {
+          "title":"Complete Notes",
+          "link":"https://drive.google.com/file/d/1x3DVAuYAFUQGLlEA4ro4HjI_q_8svleN/view"
+        },
+         {
+          "title":"Complete Notes",
+          "link":"https://drive.google.com/file/d/1wrAR6OxdBDMUGZ-K3wmEtNQIQQdEpByl/view"
+        },
+        {
+          "title":"Book Short notes - drive folder",
+          "link":"https://drive.google.com/drive/folders/17xOL661_usB9TgKP_zZHWFKN-Flbv2m3?usp=drive_link"
+        }
+
+      ]
     },
     {
       "name": "Artificial Intelligence",
@@ -103,8 +201,18 @@
       "code": "MCA24108DCE",
       "credits": 4,
       "description": "Fundamentals of AI and machine reasoning",
-      "papers": {},
-      "books": [],
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1qUJIY9qfMcqALjVUfgbY6L09VAKq4m_6/view",
+        "2023":"https://drive.google.com/file/d/11X-ryacr43h7Q-6C_zVNjgnQZ24yQz2V/view",
+        "2024": "https://drive.google.com/file/d/16RoHBgTitLei0hFNLiCMBzq891fBoZDW/view"
+      },
+      "books": [
+        {
+          "title":"Artificial Intelligence – A Modern Approach",
+          "author":"Stuart Russel, Peter Norvig",
+          "link":"https://maqsoodhussain.github.io/mca_old/assets/web_material/books/AI%20PEARSON%20MODERN%20APPROACH.pdf"
+        }
+      ],
       "notes": []
     },
     {
@@ -123,9 +231,23 @@
       "code": "MCA24110DCE",
       "credits": 4,
       "description": "Architecture of computer systems and assembly language programming",
-      "papers": {},
-      "books": [],
-      "notes": []
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1bAM0btP7B_4ImXe4YctUVntWyvwB7Agd/view",
+        "2023":"https://drive.google.com/file/d/1YzvP0F4qJ2nvly5g2C3wJbHZ6QSMCows/view"
+      },
+      "books": [
+
+      ],
+      "notes": [
+        {
+          "title":"Dr WASIM AHAMD BHAT - Original Notes",
+          "link":"https://drive.google.com/drive/folders/1ubStPJbioOLTcoedtO7LN9qefaN4dFEJ?usp=drive_link"
+        },
+         {
+          "title":"Computer ALP",
+          "link":"https://maqsoodhussain.github.io/emunotes/"
+        }
+      ]
     },
     {
       "name": "Digital and Technological Solutions",
@@ -133,7 +255,9 @@
       "code": "MCA24001OE",
       "credits": 2,
       "description": "Open elective for students of other departments",
-      "papers": {},
+      "papers": {
+        "2024": "https://drive.google.com/file/d/16ckfMqd9No7oqhSuPy4WL4g28dm7tqya/view?usp=drive_link"
+      },
       "books": [],
       "notes": []
     },
@@ -148,5 +272,4 @@
       "notes": []
     }
   ]
- 
 }
