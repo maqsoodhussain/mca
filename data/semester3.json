@@ -194,6 +194,196 @@
         }
         
       ]
+    },
+     {
+      "name": "Design and Analysis of Algorithms",
+      "type": "core",
+      "code": "MCA301",
+      "credits": 4,
+      "description": "Focuses on understanding how to solve problems efficiently using algorithms.",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1ktGhM56gIxk4OXu5lpqpA8m8ryKQwzga/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+     {
+      "name": "Operating System",
+      "type": "core",
+      "code": "MCA303",
+      "credits": 4,
+      "description": "Provides a comprehensive overview of the software that manages a computer's hardware and software resources.",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1ku0ZySPx4P-UJvLrqHSHUjE9chkaP7fP/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+     {
+      "name": "Machine Learning",
+      "type": "OE",
+      "code": "MCA304",
+      "credits": 2,
+      "description": "Provides a comprehensive overview of Machine Learning Algorithms.",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1lMEX-NYmIojtH9d-tNzIDpSRt3Y2IHpy/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+     {
+      "name": "Wireless and Mobile Communication",
+      "type": "elective",
+      "code": "MCA306",
+      "credits": 4,
+      "description": "Provides overview of wireless and mobile communications",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1kvhpfjXLsQIy8a7jAHs0Gj19tQFMqdKY/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "name": "Organizational Behavior",
+      "type": "elective",
+      "code": "MCA307",
+      "credits": 4,
+      "description": "focuses on individual and group behavior within organizational contexts.",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1kzGu3wS4HbYIRro9YQhlo02FvlgseQWs/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+ {
+      "name": "Theory of Computation",
+      "type": "elective",
+      "code": "MCA305",
+      "credits": 4,
+      "description": "deals with how efficiently problems can be solved on a model of computation using an algorithm.",
+      "papers": {
+        "2023": "#"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
+    },
+         {
+      "name": "Fundamentals of Programming with C ",
+      "type": "OE",
+      "code": "MCA301",
+      "credits": 2,
+      "description": "Provides a comprehensive overview of C language.",
+      "papers": {
+        "2023": "https://drive.google.com/file/d/1l7w43wG2CyfVMJPzGTFjxqhTvAifEqo_/view"
+      },
+      "books": [
+        {
+          "title": "#",
+          "author": "#",
+          "link": "#"
+        }
+      ],
+      "notes": [
+        {
+          "title": "#",
+          "link": "#"
+        },
+        {
+          "title": "#",
+          "link": "#"
+        }
+      ]
     }
+
   ]
 }
