@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Downloads - MCA North Campus</title>
+    <meta name="description"
+        content="Download essential software for MCA students including development tools, databases, and programming languages">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #3a0ca3;
+            --accent: #7209b7;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --info: #4895ef;
+            --surface: #ffffff;
+            --on-surface: #212529;
+            --surface-dark: #121212;
+            --on-surface-dark: #e0e0e0;
+            --card-bg: #ffffff;
+            --card-bg-dark: #1e1e1e;
+            --sidebar-bg: #f8f9fa;
+            --sidebar-bg-dark: #1a1a1a;
+            --footer-bg: linear-gradient(135deg, #1f1f2e, #2c3e50);
+            --footer-bg-dark: linear-gradient(135deg, #0f0f1a, #1a2530);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+            --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            --shadow-dark: 0 8px 20px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--on-surface);
+            background-color: var(--surface);
+            transition: var(--transition);
+            line-height: 1.6;
+        }
+
+        body.dark-mode {
+            background-color: var(--surface-dark);
+            color: var(--on-surface-dark);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 0.8rem 1rem;
+            transition: var(--transition);
+        }
+
+        body.dark-mode .navbar {
+            background-color: #1a1a1a !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            margin: 0 0.5rem;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(67, 97, 238, 0.9) 0%, rgba(58, 12, 163, 0.85) 100%), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 0;
+            color: white;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Software Cards - Smaller Size */
+        .software-card {
+            border: none;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            background-color: var(--card-bg);
+            height: 100%;
+        }
+
+        body.dark-mode .software-card {
+            background-color: var(--card-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+
+        .software-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .software-img {
+            height: 80px;
+            object-fit: contain;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+
+        body.dark-mode .software-img {
+            background: #2a2a2a;
+            border-bottom: 1px solid #444;
+        }
+
+        .software-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 1;
+        }
+
+        .software-info {
+            padding: 1rem;
+        }
+
+        .software-title {
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+
+        .software-description {
+            color: #6c757d;
+            margin-bottom: 0.8rem;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            height: 2.4rem;
+            overflow: hidden;
+        }
+
+        body.dark-mode .software-description {
+            color: #aaa;
+        }
+
+        .software-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            font-size: 0.75rem;
+        }
+
+        .software-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .software-meta i {
+            color: var(--primary);
+            font-size: 0.8rem;
+        }
+
+        /* Filters */
+        .filters-section {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        body.dark-mode .filters-section {
+            background-color: var(--card-bg-dark);
+            box-shadow: var(--shadow-dark);
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--footer-bg);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+            transition: var(--transition);
+        }
+
+        body.dark-mode footer {
+            background: var(--footer-bg-dark);
+        }
+
+        footer .footer-link {
+            color: #ddd;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        footer .footer-link:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .social-link {
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-link:hover {
+            transform: scale(1.2);
+            color: var(--primary) !important;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        /* Loading spinner */
+        .loading-spinner {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+        }
+
+        .loading-spinner:after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid var(--primary);
+            border-color: var(--primary) transparent var(--primary) transparent;
+            animation: loading-spinner 1.2s linear infinite;
+        }
+
+        @keyframes loading-spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 0;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+
+            .software-card {
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Category badges */
+        .category-badge {
+            font-size: 0.65rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+
+        /* Search box */
+        .search-box {
+            position: relative;
+        }
+
+        .search-box .form-control {
+            padding-right: 45px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+
+        .search-box .btn {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        /* OS badges */
+        .os-badges {
+            display: flex;
+            gap: 0.2rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .os-badge {
+            font-size: 0.6rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            background-color: #e9ecef;
+            color: #495057;
+        }
+
+        body.dark-mode .os-badge {
+            background-color: #495057;
+            color: #e9ecef;
+        }
+
+        /* Download button */
+        .download-btn {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-laptop-code me-2"></i>MCA North Campus
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="semestersDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="fas fa-book me-1"></i> Semesters
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="semester.html?sem=1">Semester 1</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=2">Semester 2</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=3">Semester 3</a></li>
+                            <li><a class="dropdown-item" href="semester.html?sem=4">Project Semester</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="software.html"><i class="fas fa-download me-1"></i>
+                            Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://maqsoodhussain.github.io/mca_old"><i
+                                class="fas fa-undo me-1"></i>Old Website</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold mb-3">Software Downloads</h1>
+            <p class="lead mb-4">
+                Download essential software tools for your MCA program. All resources are free and verified.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="search-box">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search software...">
+                        <button class="btn btn-primary" id="searchButton">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <select class="form-select" id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="Development Tools">Development Tools</option>
+                        <option value="Database">Database</option>
+                        <option value="Programming Languages">Programming Languages</option>
+                        <option value="Server">Server</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="osFilter">
+                        <option value="all">All Platforms</option>
+                        <option value="Windows">Windows</option>
+                        <option value="macOS">macOS</option>
+                        <option value="Linux">Linux</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Software Grid -->
+        <div class="row" id="softwareContainer">
+            <!-- Software items will be loaded here -->
+            <div class="col-12 text-center py-5">
+                <div class="loading-spinner"></div>
+                <p class="mt-3">Loading software...</p>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="text-center py-5 d-none">
+            <i class="fas fa-search fa-3x text-muted mb-3"></i>
+            <h3 class="fw-semibold">No software found</h3>
+            <p class="text-muted">Try adjusting your filters or search query</p>
+            <button class="btn btn-primary mt-2" id="resetFilters">
+                <i class="fas fa-undo me-1"></i> Reset Filters
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold mb-3">MCA NORTH CAMPUS </h4>
+                    <p class="small">Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and
+                        exam resources — empowering students for the future of technology.</p>
+
+                    <!-- Social Media -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://wa.me/+917889528326" class="text-white fs-5 social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/DX8Yts44nyWFWg7e0bKg5N?mode=ems_copy_t"
+                            class="text-white fs-5 social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/maqsoodhussain" class="text-white fs-5 social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:themaqsoodhussainwani@gmail.com" class="text-white fs-5 social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://maqsoodhussain.github.io" class="text-white fs-5 social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link"><i class="fas fa-home me-2"></i>Home</a></li>
+                        <li><a href="semester.html?sem=1" class="footer-link"><i class="fas fa-book me-2"></i>Semester
+                                1</a></li>
+                        <li><a href="semester.html?sem=2" class="footer-link"><i class="fas fa-book me-2"></i>Semester
+                                2</a></li>
+                        <li><a href="semester.html?sem=3" class="footer-link"><i class="fas fa-book me-2"></i>Semester
+                                3</a></li>
+                        <li><a href="software.html" class="footer-link"><i class="fas fa-download me-2"></i>Software</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link"><i class="fas fa-file-alt me-2"></i>Syllabus</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-book-open me-2"></i>Study Materials</a>
+                        </li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-file-pdf me-2"></i>Previous Papers</a></li>
+                        <li><a href="software.html" class="footer-link"><i class="fas fa-download me-2"></i>Software
+                                Downloads</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Stay Updated</h5>
+                    <p class="small">Subscribe to our newsletter to get the latest updates and study resources.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2 rounded-pill" placeholder="Enter email">
+                        <button class="btn btn-primary rounded-pill"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+
+                    <!-- Contact -->
+                    <ul class="list-unstyled mt-3 small">
+                        <li><i class="fas fa-envelope me-2"></i> thegreattechofficial@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 7889528326</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Department of Computer Science North Campus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-light">
+
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 MCA North Campus. All rights reserved. Designed by <a
+                        href="thegreattech.github.io">TheGreatTech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // DOM Elements
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const backToTopBtn = document.querySelector('.back-to-top');
+        const softwareContainer = document.getElementById('softwareContainer');
+        const noResults = document.getElementById('noResults');
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const osFilter = document.getElementById('osFilter');
+        const resetFiltersBtn = document.getElementById('resetFilters');
+
+        // Store software data
+        let allSoftware = [];
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function () {
+            loadSoftwareData();
+            initEventListeners();
+            checkDarkModePreference();
+        });
+
+        // Load software data from JSON
+        function loadSoftwareData() {
+            fetch('data/software.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    allSoftware = data;
+                    displaySoftware(allSoftware);
+                })
+                .catch(error => {
+                    console.error('Error fetching software data:', error);
+                    softwareContainer.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-danger" role="alert">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                Failed to load software data. Please try again later.
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+        // Display software in the container
+        function displaySoftware(software) {
+            if (!software || software.length === 0) {
+                noResults.classList.remove('d-none');
+                softwareContainer.classList.add('d-none');
+                return;
+            }
+
+            noResults.classList.add('d-none');
+            softwareContainer.classList.remove('d-none');
+
+            // Clear container
+            softwareContainer.innerHTML = '';
+
+            // Create software cards
+            software.forEach(item => {
+                const softwareCard = createSoftwareCard(item);
+                softwareContainer.appendChild(softwareCard);
+            });
+        }
+
+        // Create software card HTML
+        function createSoftwareCard(software) {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-lg-4 col-xl-3 mb-3 fade-in';
+
+            // Generate OS badges
+            const osBadges = software.os.map(os =>
+                `<span class="os-badge">${os}</span>`
+            ).join('');
+
+            col.innerHTML = `
+                <div class="software-card card">
+                    <div class="position-relative">
+                        <img src="${software.image}" alt="${software.name}" class="software-img w-100">
+                        <span class="software-badge category-badge bg-warning">${software.category}</span>
+                    </div>
+                    <div class="software-info">
+                        <h3 class="software-title">${software.name}</h3>
+                        <p class="software-description">${software.description}</p>
+                        
+                        <div class="software-meta">
+                            <span><i class="fas fa-tag"></i> v${software.version}</span>
+                            <span><i class="fas fa-database"></i> ${software.fileSize}</span>
+                        </div>
+                        
+                        <div class="os-badges">
+                            ${osBadges}
+                        </div>
+                        
+                        <div class="d-flex justify-content-center mt-2">
+                            <a href="${software.downloadLink}" class="btn btn-primary download-btn w-100" target="_blank">
+                                <i class="fas fa-download me-1"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return col;
+        }
+
+        // Initialize event listeners
+        function initEventListeners() {
+            // Dark mode toggle
+            if (darkModeToggle) {
+                darkModeToggle.addEventListener('click', toggleDarkMode);
+            }
+
+            // Back to top button
+            window.addEventListener('scroll', toggleBackToTop);
+            backToTopBtn.addEventListener('click', scrollToTop);
+
+            // Search functionality
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+
+            // Filter events
+            categoryFilter.addEventListener('change', applyFilters);
+            osFilter.addEventListener('change', applyFilters);
+
+            // Reset filters button
+            resetFiltersBtn.addEventListener('click', resetFilters);
+        }
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+
+        // Check dark mode preference
+        function checkDarkModePreference() {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        }
+
+        // Toggle back to top button
+        function toggleBackToTop() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        }
+
+        // Scroll to top
+        function scrollToTop(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Perform search
+        function performSearch() {
+            applyFilters();
+        }
+
+        // Apply filters
+        function applyFilters() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const os = osFilter.value;
+
+            const filteredSoftware = allSoftware.filter(software => {
+                // Search term filter
+                const matchesSearch = software.name.toLowerCase().includes(searchTerm) ||
+                    software.description.toLowerCase().includes(searchTerm) ||
+                    software.category.toLowerCase().includes(searchTerm);
+
+                // Category filter
+                const matchesCategory = category === 'all' || software.category === category;
+
+                // OS filter
+                const matchesOS = os === 'all' || software.os.includes(os);
+
+                return matchesSearch && matchesCategory && matchesOS;
+            });
+
+            displaySoftware(filteredSoftware);
+        }
+
+        // Reset filters
+        function resetFilters() {
+            searchInput.value = '';
+            categoryFilter.value = 'all';
+            osFilter.value = 'all';
+            displaySoftware(allSoftware);
+        }
+    </script>
+</body>
+
+</html>
