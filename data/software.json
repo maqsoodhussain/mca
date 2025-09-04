@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Visual Studio Code",
+    "version": "1.85.1",
+    "description": "Lightweight but powerful source code editor",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "85 MB",
+    "downloadLink": "https://code.visualstudio.com/download",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+  },
+  {
+    "name": "IntelliJ IDEA Community",
+    "version": "2023.3.2",
+    "description": "Java IDE for developing computer software",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "650 MB",
+    "downloadLink": "https://www.jetbrains.com/idea/download/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1200px-IntelliJ_IDEA_Icon.svg.png"
+  },
+  {
+    "name": "MySQL Community Server",
+    "version": "8.0.36",
+    "description": "Open-source relational database management system",
+    "category": "Database",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "450 MB",
+    "downloadLink": "https://dev.mysql.com/downloads/mysql/",
+    "image": "https://www.mysql.com/common/logos/logo-mysql-170x115.png"
+  },
+  {
+    "name": "Postman",
+    "version": "10.22.5",
+    "description": "API platform for building and using APIs",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "180 MB",
+    "downloadLink": "https://www.postman.com/downloads/",
+    "image": "https://cdn.worldvectorlogo.com/logos/postman.svg"
+  },
+  {
+    "name": "Android Studio",
+    "version": "2023.1.1",
+    "description": "Official IDE for Android app development",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "1.2 GB",
+    "downloadLink": "https://developer.android.com/studio",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Android_Studio_Icon_3.6.svg/1200px-Android_Studio_Icon_3.6.svg.png"
+  },
+  {
+    "name": "Python",
+    "version": "3.12.1",
+    "description": "Programming language that lets you work quickly",
+    "category": "Programming Languages",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "25 MB",
+    "downloadLink": "https://www.python.org/downloads/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+  },
+  {
+    "name": "Node.js",
+    "version": "20.11.0",
+    "description": "JavaScript runtime built on Chrome's V8 JavaScript engine",
+    "category": "Programming Languages",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "28 MB",
+    "downloadLink": "https://nodejs.org/en/download/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+  },
+  {
+    "name": "Git",
+    "version": "2.43.0",
+    "description": "Distributed version control system",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "45 MB",
+    "downloadLink": "https://git-scm.com/downloads",
+    "image": "https://git-scm.com/images/logo@2x.png"
+  },
+  {
+    "name": "XAMPP",
+    "version": "8.2.12",
+    "description": "Apache distribution containing MySQL, PHP, and Perl",
+    "category": "Server",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "150 MB",
+    "downloadLink": "https://www.apachefriends.org/download.html",
+    "image": "https://th.bing.com/th/id/OSK.mLArUMAf8IL0dsspDP_uR0JR50vVCmTF8mzU0VADNdk?w=64&h=64&c=7&o=6&dpr=1.5&pid=SANGAM"
+  },
+  {
+    "name": "Eclipse IDE",
+    "version": "2023-12",
+    "description": "Integrated development environment",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "220 MB",
+    "downloadLink": "https://www.eclipse.org/downloads/",
+    "image": "https://th.bing.com/th/id/ODF.kIAbNFEzzggubxP6JOPwjA?w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2"
+  }
+]
