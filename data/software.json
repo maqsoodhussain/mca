@@ -1,4 +1,47 @@
-[
+[ 
+  {
+    "name": "ANYDESK",
+    "version": " ",
+    "description": "A remote access software",
+    "category": "remote desktop/access software",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "3 MB",
+    "downloadLink": "https://drive.google.com/file/d/1Er_ZzE8aRza_-aQUUNsDzqHQwfB1_l3Z/view?usp=drive_link",
+    "image": "https://ts3.mm.bing.net/th?id=OIP.q8wRzJ6nwJdU5gA3MEgoGgHaEK&pid=15.1"
+  },
+   
+  {
+    "name": "JDK",
+    "version": " ",
+    "description": "Software for Java developers.",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "164 MB",
+    "downloadLink": "https://drive.google.com/file/d/1mCJCMMmc81fIr_vyUgop4K-CgMzgA_pv/view?usp=drive_link",
+    "image": "https://nosomovo.xyz/wp-content/uploads/2020/04/jdk-8-file-install-offline.jpg"
+  },
+  {
+    "name": "XAMPP",
+    "version": "8.0.30",
+    "description": "the most popular PHP development environment. ",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "145 MB",
+    "downloadLink": "https://drive.google.com/file/d/18n3tBaLB3666xXuBXQ_hunfxvn2O-Pjk/view?usp=drive_link",
+    "image": "https://th.bing.com/th/id/OIP.TcXoXInlE02wd-oQIhGjQgHaHa?rs=1&pid=ImgDetMain"
+  },
   {
     "name": "Adobe Photoshop",
     "version": "22.5.1",
