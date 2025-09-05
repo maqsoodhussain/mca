@@ -1,5 +1,33 @@
 [
   {
+    "name": "Adobe Photoshop",
+    "version": "22.5.1",
+    "description": "software for graphic design, photo editing, and image creation. ",
+    "category": "raster graphics editor",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "2.3 gb",
+    "downloadLink": "https://drive.google.com/file/d/1VsRUqYaesDhSyDR6KQXKgXg5oJO0WNLV/view?usp=drive_link",
+    "image": "https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo.png"
+  },
+  {
+    "name": "DEV C/CPP",
+    "version": "4.9.2",
+    "description": "Powerful source code editor for C/CPP",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "fileSize": "48 MB",
+    "downloadLink": "https://drive.google.com/file/d/1p8uMtnF1lxsSLpWtWIS6n4sBP59Nrzmx/view?usp=drive_link",
+    "image": "https://maqsoodhussain.github.io/mca_old/assets/img/software/devcpp.jfif"
+  },
+  {
     "name": "Visual Studio Code",
     "version": "1.85.1",
     "description": "Lightweight but powerful source code editor",
