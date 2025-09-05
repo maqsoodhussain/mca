@@ -2,15 +2,14 @@
   "semester": 4,
   "subjects": [
     {
-      "name": "Project",
-      "type": "..",
-      "code": "..",
-      "credits": 0,
-      "description": "Project Links will be available shortly ",
+      "name": "Management Information System",
+      "type": "OE",
+      "code": "MCA31401OE",
+      "credits": 2,
+      "description": "Management Information System <a href='https://drive.google.com/file/d/1BSz0PhwdmPcZa-Qp3_FzeXCFY0jiKgL8/view'>Syllabus</a>   ",
       "papers": {
-        "2023": "https://example.com/papers/ds_2023.pdf",
-        "2022": "https://example.com/papers/ds_2022.pdf",
-        "2021": "https://example.com/papers/ds_2021.pdf"
+        "2023": "https://drive.google.com/file/d/1AvWjE9l1KrKwmaWTchGEVV6Y8PkTAzcb/view"
+        
       },
       "books": [
         
