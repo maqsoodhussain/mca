@@ -138,5 +138,19 @@
     "fileSize": "220 MB",
     "downloadLink": "https://www.eclipse.org/downloads/",
     "image": "https://th.bing.com/th/id/ODF.kIAbNFEzzggubxP6JOPwjA?w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2"
+  },
+  {
+    "name": "EMU 8086",
+    "version": " ",
+    "description": "Emulator and integrated development environment (IDE) for Windows",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      " ",
+      " "
+    ],
+    "fileSize": "3 MB",
+    "downloadLink": "https://drive.google.com/file/d/1zrWiszACrewYgxaE4pgCfuH9Y5esnfjp/view",
+    "image": "https://maqsoodhussain.github.io/mca_old/assets/img/software/emu.jfif"
   }
 ]
