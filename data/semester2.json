@@ -9,7 +9,9 @@
       "description": "Advanced data structures using C++",
       "papers": {
         "2022":"https://drive.google.com/file/d/1V1q6Dhu9m1DD9J1PvrqS0splsi62k0EY/view",
-        "2023":"https://drive.google.com/file/d/1XLF94UF5NBO7bw6P4vRUb5vRYLhJ5lih/view"
+        "2023":"https://drive.google.com/file/d/1XLF94UF5NBO7bw6P4vRUb5vRYLhJ5lih/view",
+        "2024":"https://drive.google.com/file/d/1AWB6JYkhoB9P9QYQd9RU6O9DavCLV5OQ/view",
+        "2025":"https://drive.google.com/file/d/1ABahL7MXnMJf8nY3EwDueuiuZrJuV4s2/view"
       },
       "books": [],
       "notes": []
@@ -20,7 +22,9 @@
       "code": "MCA24202CR",
       "credits": 6,
       "description": "Python for data analysis and machine learning",
-      "papers": {},
+      "papers": {
+        "2025":"https://drive.google.com/file/d/1AD7kVUy6mya_Q22eK345qx1cl64Wui9m/view"
+      },
       "books": [],
       "notes": []
     },
@@ -30,7 +34,10 @@
       "code": "MCA24203CR",
       "credits": 4,
       "description": "Concepts of modern operating systems",
-      "papers": {},
+      "papers": {
+        "2023":"https://drive.google.com/file/d/1ku0ZySPx4P-UJvLrqHSHUjE9chkaP7fP/view",
+        "2025":"https://drive.google.com/file/d/1AHFnjx50udDZmLnjZC9zgPbr4M8PSOFZ/view"
+      },
       "books": [],
       "notes": []
     },
@@ -40,7 +47,9 @@
       "code": "MCA24204DCE",
       "credits": 4,
       "description": "Cryptographic algorithms and secure communications",
-      "papers": {},
+      "papers": {
+        "2024":"https://drive.google.com/file/d/1AnT9cRsu-GETaLdh2O9aem_3foOob6p-/view"
+      },
       "books": [],
       "notes": []
     },
@@ -70,7 +79,9 @@
       "code": "MCA24207DCE",
       "credits": 4,
       "description": "Managing software development lifecycle",
-      "papers": {},
+      "papers": {
+        "2025":"https://drive.google.com/file/d/19huf8q6eDIAYadQFlTQfc-ei_hiE4MYp/view"
+      },
       "books": [],
       "notes": []
     },
@@ -80,7 +91,10 @@
       "code": "MCA24208DCE",
       "credits": 4,
       "description": "ML models and algorithms",
-      "papers": {},
+      "papers": {
+        "2023":"https://drive.google.com/file/d/1lMEX-NYmIojtH9d-tNzIDpSRt3Y2IHpy/view",
+        "2025":"https://drive.google.com/file/d/1A9ae2kta7X2g1By1N4jYk_DdC_s_6BSc/view"
+      },
       "books": [],
       "notes": []
     },
@@ -90,7 +104,9 @@
       "code": "MCA24209DCE",
       "credits": 4,
       "description": "Cloud platforms and services",
-      "papers": {},
+      "papers": {
+        "2025":"https://drive.google.com/file/d/1A3SAO7ILk5bZ7XCCzT-XgdAFhCvst5eT/view"
+      },
       "books": [],
       "notes": []
     },
@@ -120,7 +136,11 @@
       "code": "MCA24002OE",
       "credits": 2,
       "description": "Open elective for students of other departments",
-      "papers": {},
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1mY7Vb99GipfdwnpsB8rTRq1oILBOGNrp/view",
+        "2023":"https://drive.google.com/file/d/1k7Qsw-eJrGMZxvqOvtgLwJiEe_GUnZ3n/view",
+        "2024":"https://drive.google.com/file/d/1AWoP4ySuUen8sHeIY_2vwcR5Rgp-dfwN/view"
+      },
       "books": [],
       "notes": []
     },
@@ -130,9 +150,41 @@
       "code": "MCA24002GE",
       "credits": 2,
       "description": "Basic programming with C for non-CS students",
-      "papers": {},
+      "papers": {
+        "2023":"https://drive.google.com/file/d/1l7w43wG2CyfVMJPzGTFjxqhTvAifEqo_/view",
+        "2025":"https://drive.google.com/file/d/1AFXitp9Bc7ISzcWZr_4IsuvtuazkjDp8/view"
+      },
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Web Programing",
+      "type": "DCE",
+      "code": "MCA21205DCE",
+      "credits": 4,
+      "description": "HTML CSS JS",
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1GCI5eul2Y2zu7lu9GlcLKxGUP6kJ2esh/view",
+        "2023":"https://drive.google.com/file/d/1aVnMco0UwFaWAE5XESEIbFw0GyAAyE1t/view",
+        "2024":"https://drive.google.com/file/d/1Ar11j-LHM_atw9kJ_ixmO7lpdLBN6UtB/view"
+      },
+      "books": [],
+      "notes": []
+    },
+    {
+      "name": "Web Desigining",
+      "type": "OE",
+      "code": "MCA21201OE",
+      "credits": 2,
+      "description": "HTML CSS JS",
+      "papers": {
+        "2022":"https://drive.google.com/file/d/1GCI5eul2Y2zu7lu9GlcLKxGUP6kJ2esh/view",
+        "2023":"https://drive.google.com/file/d/1aVnMco0UwFaWAE5XESEIbFw0GyAAyE1t/view?usp=drive_link",
+        "2024":"https://drive.google.com/file/d/1AkyQJahKJ5YTh1zqiovL6hGTeS-w5yOX/view"
+      },
       "books": [],
       "notes": []
     }
+    
   ]
 }
