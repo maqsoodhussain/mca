@@ -152,5 +152,19 @@
     "fileSize": "3 MB",
     "downloadLink": "https://drive.google.com/file/d/1zrWiszACrewYgxaE4pgCfuH9Y5esnfjp/view",
     "image": "https://maqsoodhussain.github.io/mca_old/assets/img/software/emu.jfif"
+  },
+  {
+    "name": "MS OFFICE 2019",
+    "version": "2019",
+    "description": "Ms Office How to active <a href='https://github.com/maqsoodhussain/offiiceactivation'>Click Here</a>",
+    "category": "Development Tools",
+    "os": [
+      "Windows",
+      " ",
+      " "
+    ],
+    "fileSize": "1.8 GB",
+    "downloadLink": "https://drive.google.com/file/d/1hUlz4DzZR4Unk9oqt1t7pu1fJ8BnYJ0p/view",
+    "image": "https://th.bing.com/th/id/OIP.IWfNGafVuSeS7cqKgOYtUQHaEc?w=299&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   }
 ]
