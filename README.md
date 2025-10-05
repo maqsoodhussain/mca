@@ -205,7 +205,7 @@ If you need assistance or have any questions, feel free to reach out to us throu
 
 * **Open an Issue** in the repo to ask questions or report problems.
 * You can check out [GitHub Docs](https://docs.github.com/en/github) for more detailed guidance.
-* **Email**: [maqsood.hussain@example.com](mailto:maqsood.hussain@example.com)
+* **Email**: [maqsood.hussain@example.com](mailto:thegreattechofficial@gmail.com)
 
 We’re happy to help you out! 😊
 
