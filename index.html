@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
@@ -47,7 +46,7 @@
             --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
 
-        body {
+         body {
             font-family: 'Inter', sans-serif;
             color: var(--on-surface);
             background-color: var(--surface);
@@ -58,7 +57,7 @@
         body.dark-mode {
             background-color: var(--surface-dark);
             color: var(--on-surface-dark);
-        }
+        } 
 
         h1,
         h2,
@@ -295,6 +294,7 @@
 
         body.dark-mode footer {
             background: var(--footer-bg-dark);
+            
         }
 
         footer .footer-link {
@@ -576,6 +576,8 @@
             });
         });
     </script>
+        
+
 
 
 
@@ -639,7 +641,7 @@
                 Discover the latest MCA syllabus (2023 onwords batch) along with notes, books, and exam resources —
                 empowering students for the future of technology.
                 If you wish to access the previous syllabus and resources, <a
-                    href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus">click here</a>.
+                    href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus">click here</a>
             </p>
 
 
@@ -647,13 +649,72 @@
                 <a href="https://cs.uok.edu.in/Main/ViewPage.aspx?Page=MCA_Syllabus"
                     class="btn btn-light btn-lg px-4 py-2">
                     <i class="fas fa-download me-2"></i>Download Syllabus
+
                 </a>
                 <a href="#semesters" class="btn btn-outline-light btn-lg px-4 py-2">
+                    
                     Explore Semesters <i class="fas fa-arrow-right ms-2"></i>
                 </a>
+                <!-- <a href="syllabus\MCA syllabus_1stsem_2025.pdf.pdf"target="_blank">Download MCA Syllabus_2025 (PDF)</a> -->
             </div>
         </div>
     </section>
+   
+  <!-- adding current year syllabus' here  -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .marquee-container {
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      position: relative; /* Needed for absolute positioning of content */
+    }
+
+    .marquee-content {
+      position: absolute; /* Position relative to container */
+      white-space: nowrap;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: marquee 25s linear infinite;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .marquee-content a {
+      text-decoration: none;
+      color: #0000ee;
+      font-weight: bold;
+    }
+
+    @keyframes marquee {
+      0% { left: 100%; }   /* Start just off the right edge */
+      100% { left: -100%; } /* End just off the left edge */
+    }
+  </style>
+
+
+<!-- First Line: 1st Sem Syllabus -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    <a href="syllabus/MCA_1st_Sem_Syllabus_2025.pdf" target="_blank">Download 1st Sem Syllabus (2025) PDF</a>
+  </div>
+</div>
+
+<!-- Second Line: 3rd Sem Syllabus -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    <a href="syllabus/MCA_3rd_Sem_Syllabus_2025.pdf" target="_blank">Download 3rd Sem Syllabus (2025) PDF</a>
+  </div>
+</div>
+ 
+
+
 
     <!-- Course Introduction -->
     <section class="container py-5">
@@ -1181,6 +1242,9 @@
             </div>
         </div>
 
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 MCA North Campus. All rights reserved. Designed by <a
+                        href="https://thegreattech.github.io">TheGreatTech</a></p>
         <!-- Android App Section -->
         <div class="row mt-4">
             <div class="col-12 text-center">
@@ -1298,14 +1362,14 @@
         // Dark Mode Toggle code disabled right now 
         function toggleDarkMode() {
 
-            // document.body.classList.toggle('dark-mode');
-            // const isDarkMode = document.body.classList.contains('dark-mode');
-            // localStorage.setItem('darkMode', isDarkMode);
+             document.body.classList.toggle('dark-mode');
+             const isDarkMode = document.body.classList.contains('dark-mode');
+             localStorage.setItem('darkMode', isDarkMode);
 
             // Update icon
-            // const icon = darkModeToggle.querySelector('i');
-            // icon.classList.toggle('fa-moon', !isDarkMode);
-            // icon.classList.toggle('fa-sun', isDarkMode);
+             const icon = darkModeToggle.querySelector('i');
+             icon.classList.toggle('fa-moon', !isDarkMode);
+             icon.classList.toggle('fa-sun', isDarkMode);
         }
 
         // Check for saved dark mode preference
